@@ -1,0 +1,696 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\HCOK.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\HCOK.ico"
+ICON_PREVIEW            ICON    DISCARDABLE     "IMAGE\\preview.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 HCOK"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "HCOK 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_HCOK_DIALOG DIALOGEX 0, 0, 586, 525
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HCOK"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "单曲播放",IDC_RADIOdb,"Button",BS_AUTORADIOBUTTON,77,
+                    350,48,10
+    CONTROL         "单曲循环",IDC_RADIOdx,"Button",BS_AUTORADIOBUTTON,153,
+                    350,48,10
+    CONTROL         "顺序播放",IDC_RADIOxb,"Button",BS_AUTORADIOBUTTON,229,
+                    350,48,10
+    CONTROL         "列表循环",IDC_RADIOlx,"Button",BS_AUTORADIOBUTTON,305,
+                    350,48,10
+    CONTROL         "",IDC_MEDIAPLAYER1,
+                    "{22D6F312-B0F6-11D0-94AB-0080C74C7E95}",WS_TABSTOP,7,7,
+                    448,309
+    PUSHBUTTON      "清空播放列表",IDC_DELLIST,477,141,75,14
+    PUSHBUTTON      "已点歌曲列表",IDC_SELECTED,477,117,75,14
+    PUSHBUTTON      "按歌手查询",IDC_SINFIND,477,165,75,14
+    PUSHBUTTON      "按拼音查询",IDC_PYFIND,477,189,75,14
+    PUSHBUTTON      "按歌曲名字数查询",IDC_NUFIND,477,213,75,14
+    PUSHBUTTON      "按歌曲类别查询",IDC_TFIND,477,237,75,14
+    GROUPBOX        "功能区",IDC_STATIC,468,107,98,220
+    PUSHBUTTON      "管理员设置",IDC_MANAGE,477,261,75,14
+    PUSHBUTTON      "注销",IDC_LOGOUT,477,309,75,14
+    PUSHBUTTON      "开户点歌",IDC_CHECKINOUT,477,285,75,14
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,365,567,153
+    CTEXT           "",IDC_SHOWTEXT,468,19,102,81,SS_CENTERIMAGE
+    PUSHBUTTON      "上一首",IDC_PREVIOUS,7,327,39,14
+    PUSHBUTTON      "下一首",IDC_NEXT,66,327,39,14
+    PUSHBUTTON      "增加音量",IDC_VOLUP,125,327,39,14
+    PUSHBUTTON      "减小音量",IDC_VOLDOWN,184,327,39,14
+    PUSHBUTTON      "暂停",IDC_PLAYPAUSE,361,327,39,14
+    PUSHBUTTON      "停止",IDC_STOP,420,327,39,14
+    PUSHBUTTON      "快进>>",IDC_QIUC,243,327,39,14
+    PUSHBUTTON      "快退<<",IDC_QBACK,302,327,39,14
+    PUSHBUTTON      "使用说明",IDC_HELP,477,346,75,14
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 219, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,15,60,33,14
+    PUSHBUTTON      "取消",IDCANCEL,161,60,35,14
+    EDITTEXT        IDC_GPASSWOER,97,29,68,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,37,32,24,13
+    LTEXT           "初始用户admin 密码为1",IDC_STATIC,37,48,85,8
+    EDITTEXT        IDC_USER,97,10,68,14,ES_AUTOHSCROLL
+    LTEXT           "管理员",IDC_STATIC,36,13,44,13
+    CONTROL         "",IDC_SEPARATOR,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    10,85,196,1
+    EDITTEXT        IDC_OLDPASSWORD,97,96,68,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWPASSWORD,97,117,68,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "原密码",IDC_OLDTEXT,37,99,29,13
+    LTEXT           "新密码",IDC_NEWTEXT,36,118,24,13
+    PUSHBUTTON      "修改密码",IDC_MODIFY,88,60,41,14
+END
+
+IDD_MANAGE DIALOG DISCARDABLE  0, 0, 349, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "离开",IDOK,223,159,50,14
+    PUSHBUTTON      "添加歌曲",IDC_ADDSONG,223,27,50,14
+    PUSHBUTTON      "删除歌曲",IDC_DELSONG,223,49,50,14
+    PUSHBUTTON      "设置费率",IDC_PRICE,223,137,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,26,40,176,132
+    GROUPBOX        "歌库所有歌曲",IDC_STATIC,15,22,196,153
+    PUSHBUTTON      "添加歌手",IDC_ADDSINGER,223,71,50,14
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,289,39,44,126
+    GROUPBOX        "歌库已有歌手",IDC_STATIC,281,28,61,143
+    PUSHBUTTON      "删除歌手",IDC_DEL,223,93,50,14
+    PUSHBUTTON      "修改歌手信息",IDC_MODIFSINGER,223,115,50,14
+    LTEXT           "",IDC_INFOR,229,8,101,15
+END
+
+IDD_MADDSONG DIALOG DISCARDABLE  0, 0, 422, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理员添加歌曲"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "离开",IDCANCEL,358,202,50,14
+    LTEXT           "歌名:",IDC_STATIC,14,33,49,14
+    LTEXT           "歌手:",IDC_STATIC,14,57,49,14
+    LTEXT           "歌曲类别:",IDC_STATIC,14,105,49,14
+    LTEXT           "文件名:",IDC_STATIC,14,129,49,14
+    LTEXT           "歌曲名数字:",IDC_STATIC,14,81,49,14
+    LTEXT           "格式:",IDC_STATIC,14,153,49,14
+    EDITTEXT        IDC_SONGNAME,90,33,136,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SINGER,90,57,136,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FILENAME,90,125,136,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FORMAT,90,149,136,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,90,81,136,102,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,90,103,136,84,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "选择歌曲",IDC_CHOOSE,10,202,50,14
+    PUSHBUTTON      "加入到歌库",IDC_ADD,121,202,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,253,35,153,120
+    GROUPBOX        "歌库所有歌曲列表",IDC_STATIC,246,26,169,138
+    PUSHBUTTON      "删除歌库歌曲",IDC_DEL,242,202,50,14
+    CONTROL         "链接添加",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,125,179,48,10
+    CONTROL         "物理添加",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,210,
+                    178,48,10
+    LTEXT           "",IDC_INFOR,22,7,208,16
+END
+
+IDD_SETPRICE DIALOG DISCARDABLE  0, 0, 292, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置费率"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "离开",IDOK,134,178,40,14
+    COMBOBOX        IDC_COMBO1,73,24,48,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "房间类型：",IDC_STATIC,23,24,46,12
+    LTEXT           "会员卡类型:",IDC_STATIC,23,114,46,12
+    LTEXT           "打折率:",IDC_STATIC,20,156,46,12
+    LTEXT           "每小时单价:",IDC_STATIC,26,65,46,12
+    COMBOBOX        IDC_COMBO2,75,114,46,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PRICE,73,63,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ABATD,76,156,46,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,19,13,121,76
+    GROUPBOX        "",IDC_STATIC,16,97,123,76
+    CONTROL         "List1",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,167,108,118,61
+    CONTROL         "List2",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,167,21,119,61
+    PUSHBUTTON      ">>>>",IDC_SETROOM,144,53,18,14
+    PUSHBUTTON      ">>>>",IDC_SETABATE,145,133,18,14
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 186, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,125,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,125,50,14
+    LTEXT           "会员卡类型:",IDC_STATIC,26,64,50,12
+    LTEXT           "房间类型:",IDC_STATIC,26,39,50,12
+    LTEXT           "预付金额:",IDC_STATIC,26,89,50,12
+    COMBOBOX        IDC_COMBO1,87,39,68,51,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,87,64,68,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_GIVENMONEY,87,86,68,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 149, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加歌手信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,108,50,14
+    PUSHBUTTON      "取消",IDCANCEL,92,108,50,14
+    LTEXT           "歌手名:",IDC_STATIC,24,17,36,12
+    LTEXT           "歌手性别:",IDC_STATIC,24,38,35,12
+    LTEXT           "歌手地区:",IDC_STATIC,24,56,35,12
+    LTEXT           "歌手拼音:",IDC_STATIC,24,73,35,12
+    EDITTEXT        IDC_SINGER,82,17,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SGEPIN,82,71,40,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,82,34,43,47,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,82,50,44,73,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MODIFISINGER DIALOG DISCARDABLE  0, 0, 148, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改歌手资料"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "修改",IDOK,91,92,50,14
+    LTEXT           "歌手名:",IDC_STATIC,21,19,36,12
+    LTEXT           "歌手性别:",IDC_STATIC,21,40,35,12
+    LTEXT           "歌手地区:",IDC_STATIC,21,58,35,12
+    LTEXT           "歌手拼音:",IDC_STATIC,21,75,35,12
+    EDITTEXT        IDC_SINGER,79,19,40,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SINGERSEX,79,37,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SGEAREA,79,55,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SGEPIN,79,73,40,12,ES_AUTOHSCROLL
+END
+
+IDD_BYSINGER DIALOG DISCARDABLE  0, 0, 233, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "根据歌手查询"
+FONT 10, "System"
+BEGIN
+    LTEXT           "请选择歌手类型:",IDC_STATIC,30,25,73,10
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,48,219,147
+    COMBOBOX        IDC_COMBO2,141,25,58,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "",IDC_INFOR,7,6,152,13
+    PUSHBUTTON      "返回上一级菜单",IDC_UP,165,6,61,10
+END
+
+IDD_BYPINYIN DIALOG DISCARDABLE  0, 0, 187, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "根据拼音查询"
+FONT 10, "System"
+BEGIN
+    LTEXT           "请在此输入拼音:",IDC_STATIC,7,30,64,14
+    EDITTEXT        IDC_EDIT1,87,32,93,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,47,173,129
+    PUSHBUTTON      "返回上级菜单",IDC_UP,102,7,78,14
+    CTEXT           "",IDC_INFOR,7,7,95,14
+END
+
+IDD_BYZISHU DIALOG DISCARDABLE  0, 0, 188, 171
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "根据字数查询"
+FONT 10, "System"
+BEGIN
+    LTEXT           "歌曲名字数:",IDC_STATIC,35,29,51,12
+    COMBOBOX        IDC_COMBO1,99,28,48,142,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,42,174,122
+    CTEXT           "",IDC_INFOR,7,7,174,14
+END
+
+IDD_BYSONGTYP DIALOG DISCARDABLE  0, 0, 195, 187
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "按歌曲类别查询"
+FONT 10, "System"
+BEGIN
+    LTEXT           "按歌曲类别:",IDC_STATIC,17,34,62,12
+    COMBOBOX        IDC_COMBO1,116,35,62,76,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,49,181,131
+    CTEXT           "",IDC_INFOR,7,13,175,16
+END
+
+IDD_SELECTED DIALOG DISCARDABLE  0, 0, 203, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "已点播歌曲"
+FONT 10, "System"
+BEGIN
+    LTEXT           "已点播歌曲列表:",IDC_STATIC,7,7,62,8
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,23,189,149
+    LTEXT           "",IDC_INFOR,104,7,92,8
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 304, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "打印账单"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确认结账",IDOK,7,130,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,291,7,6,6
+    PUSHBUTTON      "打印预览",IDC_BUTTON1,247,130,50,14
+    LTEXT           "开始消费时间:",IDC_STATIC,14,24,53,8
+    LTEXT           "结束消费时间:",IDC_STATIC,14,49,53,8
+    LTEXT           "包房类型:",IDC_STATIC,14,74,53,8
+    LTEXT           "会员卡类型:",IDC_STATIC,14,99,53,8
+    LTEXT           "每小时单价(元):",IDC_STATIC,165,25,53,8
+    LTEXT           "打折率:",IDC_STATIC,165,50,53,8
+    LTEXT           "预付额(元):",IDC_STATIC,165,75,53,8
+    LTEXT           "找零(元):",IDC_STATIC,165,100,53,8
+    EDITTEXT        IDC_EDIT1,71,23,87,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,71,47,87,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,71,71,87,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,71,95,87,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,227,23,57,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT6,227,48,57,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT7,227,73,57,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT8,227,98,57,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+DLG_SYS_PREGOTO DIALOG DISCARDABLE  0, 0, 139, 73
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "转到页"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "页码(&P):",IDC_STATIC,25,18,33,8
+    EDITTEXT        EDT_GOTO,63,15,39,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",SPIN_GOTO,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,103,15,
+                    10,14
+    PUSHBUTTON      "确定(&O)",BTN_OK,16,44,50,15
+    PUSHBUTTON      "取消(&C)",BTN_CANCEL,73,44,50,15
+END
+
+DLG_SYS_PREPARENT DIALOG DISCARDABLE  0, 0, 450, 299
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "打印预览"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_SUP,"Static",SS_BLACKFRAME | SS_SUNKEN,0,0,449,1
+    CONTROL         "",IDC_SDOWN,"Static",SS_BLACKFRAME | SS_SUNKEN,0,17,449,
+                    1
+    LISTBOX         IDC_LIST1,0,5,8,9,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+DLG_SYS_PREVIEW DIALOG DISCARDABLE  0, 0, 450, 300
+STYLE DS_CONTROL | WS_CHILD | WS_VSCROLL | WS_HSCROLL
+FONT 9, "宋体"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HCOK Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HCOK\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HCOK.EXE\0"
+            VALUE "ProductName", "HCOK 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_HCOK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 579
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 518
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_MANAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_MADDSONG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 415
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_SETPRICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_MODIFISINGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_BYSINGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_BYPINYIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_BYZISHU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_BYSONGTYP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_SELECTED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_HCOK_DIALOG DLGINIT
+BEGIN
+    IDC_MEDIAPLAYER1, 0x376, 340, 0
+0x0000, 0x0000, 0x0001, 0x0000, 0x4574, 0x0000, 0x2ff5, 0x0000, 0x0003, 
+0xffff, 0xffff, 0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 
+0xffff, 0x000b, 0xffff, 0x0000, 0x0002, 0x0000, 0x0000, 0x000b, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0005, 0x0000, 
+0x0000, 0x0000, 0x4014, 0x0008, 0x0002, 0x0000, 0x0000, 0x000b, 0xffff, 
+0x0003, 0x0000, 0x0000, 0x0005, 0x0000, 0x0000, 0x0000, 0xbff0, 0x0003, 
+0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0013, 0x0000, 0x0000, 
+0x0013, 0xffff, 0x00ff, 0x0003, 0x0000, 0x0000, 0x0003, 0x0004, 0x0000, 
+0x000b, 0xffff, 0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 
+0xffff, 0x0008, 0x0002, 0x0000, 0x0000, 0x000b, 0xffff, 0x0003, 0xffff, 
+0xffff, 0x000b, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0x0000, 0x0005, 
+0x0000, 0x0000, 0x0000, 0x3ff0, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0005, 0x0000, 
+0x0000, 0x0000, 0xbff0, 0x0005, 0x0000, 0x0000, 0x0000, 0xbff0, 0x000b, 
+0xffff, 0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 0x0000, 0x000b, 0x0000, 
+0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0x0000, 0x000b, 0x0000, 0x000b, 
+0xffff, 0x000b, 0x0000, 0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 
+0x000b, 0xffff, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x0013, 0x0000, 
+0x0000, 0x000b, 0x0000, 0x0003, 0xfda8, 0xffff, 0x000b, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "右击菜单"
+    BEGIN
+        MENUITEM "单曲播放",                    ID_MENUNANQU
+        MENUITEM "单曲循环",                    ID_MENUDANXUN
+        MENUITEM "顺序播放",                    ID_MENUSHUBO
+        MENUITEM "循环播放",                    ID_MENUXUNBO
+        MENUITEM "删除该曲",                    ID_MENUDELDAN
+        MENUITEM "清空列表",                    ID_MENUDELALL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+BMP_BACK                BITMAP  DISCARDABLE     "image\\bmp_back.bmp"
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "image\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      TBTN_TOP
+    BUTTON      TBTN_PREVIOUS
+    SEPARATOR
+    BUTTON      TBTN_GOTO
+    SEPARATOR
+    BUTTON      TBTN_NEXT
+    BUTTON      TBTN_LAST
+    SEPARATOR
+    BUTTON      TBTN_EXIT
+    SEPARATOR
+    BUTTON      TBTN_PRINT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 HCOK(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\HCOK.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

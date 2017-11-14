@@ -1,0 +1,1162 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MTAS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MTAS.ico"
+IDR_MTASTYPE            ICON    DISCARDABLE     "res\\MTASDoc.ico"
+IDI_STOP                ICON    DISCARDABLE     "res\\00228.ico"
+IDI_PLAY                ICON    DISCARDABLE     "res\\00186.ico"
+IDI_PAUSE               ICON    DISCARDABLE     "res\\00189.ico"
+IDI_FLASH               ICON    DISCARDABLE     "res\\02706.ico"
+IDI_ZOOM_IN             ICON    DISCARDABLE     "res\\06278.ico"
+IDI_ZOOM_OUT            ICON    DISCARDABLE     "res\\06277.ico"
+IDI_NORMAL_SCREEN       ICON    DISCARDABLE     "res\\07227.ico"
+IDI_FLASH_FILE          ICON    DISCARDABLE     "res\\07293.ico"
+IDI_PPT_FILE            ICON    DISCARDABLE     "res\\06981.ico"
+IDI_WORD_FILE           ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_COMMUNICATION       ICON    DISCARDABLE     "res\\06579.ico"
+IDI_ASSIGNMENT          ICON    DISCARDABLE     "res\\00626.ico"
+IDI_SLIDER              ICON    DISCARDABLE     "res\\00508.ico"
+IDI_MOVIE               ICON    DISCARDABLE     "res\\icon4.ico"
+IDI_NAVIGATE_STOP       ICON    DISCARDABLE     "res\\BTStop.ico"
+IDI_NAVIGATE_BACKWARD   ICON    DISCARDABLE     "res\\BTBack.ico"
+IDI_NAVIGATE_FORWARD    ICON    DISCARDABLE     "res\\BTForward.ico"
+IDI_NAVIGATE_REFRESH    ICON    DISCARDABLE     "res\\BTRefresh.ico"
+IDI_CW_DEL              ICON    DISCARDABLE     "res\\07778.ico"
+IDI_CW_ADD              ICON    DISCARDABLE     "res\\00137.ico"
+IDI_CW_OPEN             ICON    DISCARDABLE     "res\\01661.ico"
+IDI_CW_DIR              ICON    DISCARDABLE     "res\\00700.ico"
+IDI_HELP                ICON    DISCARDABLE     "res\\00049.ico"
+IDI_CANCEL              ICON    DISCARDABLE     "res\\01088.ico"
+IDI_OK                  ICON    DISCARDABLE     "res\\01664.ico"
+IDI_UP                  ICON    DISCARDABLE     "res\\00038.ico"
+IDI_DOWN                ICON    DISCARDABLE     "res\\00040.ico"
+IDI_ADD                 ICON    DISCARDABLE     "res\\icon5.ico"
+IDI_RESET               ICON    DISCARDABLE     "res\\00439.ico"
+IDI_BROWSE              ICON    DISCARDABLE     "res\\09725.ico"
+IDI_NAVIGATE_GOTO       ICON    DISCARDABLE     "res\\05597.ico"
+IDI_SUB                 ICON    DISCARDABLE     "res\\00138.ico"
+IDI_FULL_SCREEN         ICON    DISCARDABLE     "res\\00178.ico"
+IDI_CW_ADDS             ICON    DISCARDABLE     "res\\02134.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\bigbug.bmp"
+IDR_FLASH_TOOLBAR       BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDB_NORMAL_SCREEN       BITMAP  DISCARDABLE     "res\\normalscreen.BMP"
+IDB_FLASH_PAUSE         BITMAP  DISCARDABLE     "res\\flashpause.BMP"
+IDB_FLASH_PLAY          BITMAP  DISCARDABLE     "res\\flashplay.BMP"
+IDB_FLASH_STOP          BITMAP  DISCARDABLE     "res\\flashstop.BMP"
+IDB_FULL_SCREEN         BITMAP  DISCARDABLE     "res\\fullscreen.BMP"
+IDR_NAVIGATE_TOOLBAR    BITMAP  DISCARDABLE     "res\\navigate.bmp"
+IDR_CW_TOOLBAR          BITMAP  DISCARDABLE     "res\\cw_toolb.bmp"
+IDB_CLOCKST_SMALL       BITMAP  DISCARDABLE     "res\\ClockST_small.bmp"
+IDB_CLOCKST_BIG         BITMAP  DISCARDABLE     "res\\ClockST_big.bmp"
+IDB_CLOCKST_PANE        BITMAP  DISCARDABLE     "res\\ClockST_pane.bmp"
+IDB_BITMAP_SPLASH       BITMAP  DISCARDABLE     "res\\高等数学精品课程图标.BMP"
+IDR_TOOLBAR_FOR_PPTLIST BITMAP  DISCARDABLE     "res\\ToolBarForPptList.bmp"
+IDR_TOOLBAR_FOR_FLASHLIST BITMAP  DISCARDABLE     "res\\ToolBarForFlashList.bmp"
+IDR_TOOLBAR_FOR_WORDLIST BITMAP  DISCARDABLE     "res\\ToolBarForWordList.bmp"
+IDR_TOOLBAR_FOR_TREE_COURSEWARE BITMAP  DISCARDABLE     "res\\ToolBarForTreeCourseware.bmp"
+IDR_TOOLBAR_FOR_TREE_SECTION BITMAP  DISCARDABLE     "res\\ToolBarForTreeSection.bmp"
+IDR_TOOLBAR_FOR_TREE_CHAPTER BITMAP  DISCARDABLE     "res\\ToolBarForTreeChapter.bmp"
+IDR_TOOLBAR_FOR_TREE_CLASS BITMAP  DISCARDABLE     "res\\ToolBarForTreeClass.bmp"
+IDR_TOOLBAR_FOR_TREE_CONTEXT BITMAP  DISCARDABLE     "res\\ToolBarForTreeContext.bmp"
+IDR_TOOLBAR_FOR_TAB_FRAME BITMAP  DISCARDABLE     "res\\ToolBarForTabFrame.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_ADD_CW
+    BUTTON      ID_ADD_MULTI_CW
+    BUTTON      ID_DEL_CW
+    BUTTON      ID_OPEN_CW_DIR
+    BUTTON      ID_APP_EXIT
+    SEPARATOR
+    BUTTON      ID_VIEW_CLOCK
+    BUTTON      ID_NAVIGATE_STOP
+    BUTTON      ID_NAVIGATE_REFRESH
+    BUTTON      ID_OPEN_MYCOMPUTER
+    BUTTON      ID_OPEN_MYDOCUMENT
+    SEPARATOR
+    BUTTON      ID_PLAY_FLASH
+    BUTTON      ID_PAUSE_FLASH
+    BUTTON      ID_STOP_FLASH
+    SEPARATOR
+    BUTTON      ID_FULL_SCREEN
+    BUTTON      ID_NORMAL_SCREEN
+    SEPARATOR
+    BUTTON      ID_NAVIGATE_FORWARD
+    BUTTON      ID_NAVIGATE_BACKWARD
+    SEPARATOR
+    BUTTON      ID_PAGE_ADD_BLANK
+    BUTTON      ID_PAGE_CLOSE_CURRENT
+    BUTTON      ID_PAGE_FIRST
+    BUTTON      ID_PAGE_LAST
+    BUTTON      ID_PAGE_PREVIOUS
+    BUTTON      ID_PAGE_NEXT
+    BUTTON      ID_PAGE_PROPERTY
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_FLASH_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_PLAY_FLASH
+    BUTTON      ID_PAUSE_FLASH
+    BUTTON      ID_STOP_FLASH
+    SEPARATOR
+    BUTTON      ID_FULL_SCREEN
+    BUTTON      ID_NORMAL_SCREEN
+    SEPARATOR
+    BUTTON      IDC_FLASH_COMBOBOX
+END
+
+IDR_NAVIGATE_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_NAVIGATE_BACKWARD
+    BUTTON      ID_NAVIGATE_FORWARD
+    BUTTON      ID_NAVIGATE_STOP
+    BUTTON      ID_NAVIGATE_REFRESH
+    SEPARATOR
+    BUTTON      ID_NAVIGATE_TEXT
+    BUTTON      ID_ADDRESS_COMBOBOX
+    BUTTON      ID_NAVIGATE_GOTO
+END
+
+IDR_CW_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_OPEN_CW
+    BUTTON      ID_ADD_CW
+    BUTTON      ID_ADD_MULTI_CW
+    BUTTON      ID_DEL_CW
+    BUTTON      ID_OPEN_CW_DIR
+END
+
+IDR_TOOLBAR_FOR_PPTLIST TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDR_OPEN_PPT
+    BUTTON      IDR_ADD_PPT
+    BUTTON      ID_ADD_PPTS
+    BUTTON      IDR_DEL_PPT
+    BUTTON      IDR_DIR_PPT
+END
+
+IDR_TOOLBAR_FOR_FLASHLIST TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDR_OPEN_FLASH
+    BUTTON      IDR_ADD_FLASH
+    BUTTON      ID_ADD_FLASHS
+    BUTTON      IDR_DEL_FLASH
+    BUTTON      IDR_DIR_FLASH
+END
+
+IDR_TOOLBAR_FOR_WORDLIST TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDR_OPEN_WORD
+    BUTTON      IDR_ADD_WORD
+    BUTTON      ID_ADD_WORDS
+    BUTTON      IDR_DEL_WORD
+    BUTTON      IDR_DIR_WORD
+END
+
+IDR_TOOLBAR_FOR_TREE_COURSEWARE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_OPEN_COURSEWARE
+    BUTTON      ID_OPEN_COURSEWARE_DIR
+    BUTTON      ID_DEL_COURSEWARE
+END
+
+IDR_TOOLBAR_FOR_TREE_SECTION TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_ADD_COURSEWARE
+    BUTTON      ID_ADD_MULTI_COURSEWARE
+    BUTTON      ID_DEL_SECTION
+END
+
+IDR_TOOLBAR_FOR_TREE_CHAPTER TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_ADD_SECTION
+    BUTTON      ID_DEL_CHAPTER
+END
+
+IDR_TOOLBAR_FOR_TREE_CLASS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_ADD_CHAPTER
+    BUTTON      ID_DEL_CLASS
+END
+
+IDR_TOOLBAR_FOR_TREE_CONTEXT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_ADD_CLASS
+END
+
+IDR_TOOLBAR_FOR_TAB_FRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_PAGE_ADD_BLANK
+    BUTTON      ID_OPEN_CW
+    BUTTON      ID_FULL_SCREEN
+    BUTTON      ID_NORMAL_SCREEN
+    BUTTON      ID_PAGE_PROPERTY
+    BUTTON      ID_PAGE_CLOSE_CURRENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "课件(&F)"
+    BEGIN
+        MENUITEM "打开课件(&O)...\tCtrl+O",     ID_FILE_OPEN
+        MENUITEM "添加课件(&A)",                ID_ADD_CW
+        MENUITEM "批量添加课件(&M)",            ID_ADD_MULTI_CW
+        MENUITEM "删除课件(&D)",                ID_DEL_CW
+        MENUITEM "打开目录(&L)",                ID_OPEN_CW_DIR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "课程(&C)"
+    BEGIN
+        MENUITEM "添加课程(&C)",                ID_COURSE_ADD_CLASS
+        MENUITEM "添加章(&Z)",                  ID_COURSE_ADD_CHAPTER
+        MENUITEM "添加节(&S)",                  ID_COURSE_ADD_SECTION
+    END
+    POPUP "查看(&L)"
+    BEGIN
+        POPUP "工具栏(&T)"
+        BEGIN
+            MENUITEM "课件工具栏(&C)",              ID_VIEW_TOOLBAR_COURSEWARE
+
+            MENUITEM "导航工具栏(&N)",              ID_VIEW_TOOLBAR_GUIDE
+            MENUITEM "Flash工具栏(&F)",             ID_VIEW_TOOLBAR_FLASH
+        END
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        POPUP "侧栏(&E)"
+        BEGIN
+            MENUITEM "课程导航(&A)",                ID_VIEW_COURSE_GUIDE
+            MENUITEM "课件导航(&C)",                ID_VIEW_COURSEWARE_GUIDE
+        END
+        MENUITEM "电子钟(&K)",                  ID_VIEW_CLOCK
+        MENUITEM SEPARATOR
+        MENUITEM "停止(&S)",                    ID_NAVIGATE_STOP
+        MENUITEM "刷新(&R)",                    ID_NAVIGATE_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "我的电脑(&C)",                ID_OPEN_MYCOMPUTER
+        MENUITEM "我的文档(&D)",                ID_OPEN_MYDOCUMENT
+    END
+    POPUP "Flash控制(&K)"
+    BEGIN
+        MENUITEM "播放(&P)",                    ID_PLAY_FLASH
+        MENUITEM "暂停(&U)",                    ID_PAUSE_FLASH
+        MENUITEM "停止(&S)",                    ID_STOP_FLASH
+    END
+    POPUP "页面(&P)"
+    BEGIN
+        MENUITEM "打开空白页(&B)",              ID_PAGE_ADD_BLANK
+        MENUITEM "关闭当前页(&C)",              ID_PAGE_CLOSE_CURRENT
+        MENUITEM "视图属性(&P)",                ID_PAGE_PROPERTY
+        MENUITEM SEPARATOR
+        MENUITEM "上一页(&U)",                  ID_PAGE_PREVIOUS
+        MENUITEM "下一页(&D)",                  ID_PAGE_NEXT
+        MENUITEM "首页(&F)",                    ID_PAGE_FIRST
+        MENUITEM "末页(&L)",                    ID_PAGE_LAST
+        MENUITEM SEPARATOR
+        MENUITEM "全屏(&F)",                    ID_FULL_SCREEN
+        MENUITEM "窗口(&W)",                    ID_NORMAL_SCREEN
+    END
+    POPUP "历史(&H)"
+    BEGIN
+        MENUITEM "前进(&F)",                    ID_NAVIGATE_FORWARD
+        MENUITEM "后退(&B)",                    ID_NAVIGATE_BACKWARD
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 MTAS(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_LIST_CTRL_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "ppt"
+    BEGIN
+        MENUITEM "打开(&O)",                    IDR_OPEN_PPT
+        MENUITEM "添加(&A)",                    IDR_ADD_PPT
+        MENUITEM "批量添加(&M)",                ID_ADD_PPTS
+        MENUITEM "删除(&D)",                    IDR_DEL_PPT
+        MENUITEM "目录(&R)",                    IDR_DIR_PPT
+    END
+    POPUP "flash"
+    BEGIN
+        MENUITEM "打开(&O)",                    IDR_OPEN_FLASH
+        MENUITEM "添加(&A)",                    IDR_ADD_FLASH
+        MENUITEM "批量添加(&M)",                ID_ADD_FLASHS
+        MENUITEM "删除(&D)",                    IDR_DEL_FLASH
+        MENUITEM "目录(&R)",                    IDR_DIR_FLASH
+    END
+    POPUP "word"
+    BEGIN
+        MENUITEM "打开(&O)",                    IDR_OPEN_WORD
+        MENUITEM "添加(&A)",                    IDR_ADD_WORD
+        MENUITEM "批量添加(&M)",                ID_ADD_WORDS
+        MENUITEM "删除(&D)",                    IDR_DEL_WORD
+        MENUITEM "目录(&R)",                    IDR_DIR_WORD
+    END
+END
+
+IDR_TREE_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Context"
+    BEGIN
+        MENUITEM "添加课程(&A)",                ID_ADD_CLASS
+    END
+    POPUP "课程"
+    BEGIN
+        MENUITEM "添加章(&A)",                  ID_ADD_CHAPTER
+        MENUITEM "删除该课程(&D)",              ID_DEL_CLASS
+    END
+    POPUP "第x章"
+    BEGIN
+        MENUITEM "添加节(&A)",                  ID_ADD_SECTION
+        MENUITEM "删除本章(&D)",                ID_DEL_CHAPTER
+    END
+    POPUP "第x节"
+    BEGIN
+        MENUITEM "添加课件(&A)",                ID_ADD_COURSEWARE
+        MENUITEM "批量添加课件(&M)",            ID_ADD_MULTI_COURSEWARE
+        MENUITEM "删除本节(&D)",                ID_DEL_SECTION
+    END
+    POPUP "课件"
+    BEGIN
+        MENUITEM "打开(&O)",                    ID_OPEN_COURSEWARE
+        MENUITEM "目录(&R)",                    ID_OPEN_COURSEWARE_DIR
+        MENUITEM "删除(&D)",                    ID_DEL_COURSEWARE
+    END
+END
+
+IDR_POPUP_OUTLOOKTABCTRL MENU DISCARDABLE 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "显示更多(&M)",                ID_POPUP_OUTLOOKTABCTRL_POP
+        MENUITEM "显示更少(&L)",                ID_POPUP_OUTLOOKTABCTRL_PUSH
+        MENUITEM "选项状态(&S)...",             ID_POPUP_OUTLOOKTABCTRL_MANAGE
+
+    END
+END
+
+IDR_CNTR_INPLACE MENU DISCARDABLE 
+BEGIN
+    POPUP "课件(&F)"
+    BEGIN
+        MENUITEM "打开课件(&O)...\tCtrl+O",     ID_FILE_OPEN
+        MENUITEM "添加课件(&A)",                ID_ADD_CW
+        MENUITEM "批量添加课件(&M)",            ID_ADD_MULTI_CW
+        MENUITEM "删除课件(&D)",                ID_DEL_CW
+        MENUITEM "打开目录(&L)",                ID_OPEN_CW_DIR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "查看(&L)"
+    BEGIN
+        POPUP "工具栏(&T)"
+        BEGIN
+            MENUITEM "课件工具栏(&C)",              ID_VIEW_TOOLBAR_COURSEWARE
+
+            MENUITEM "导航工具栏(&N)",              ID_VIEW_TOOLBAR_GUIDE
+            MENUITEM "Flash工具栏(&F)",             ID_VIEW_TOOLBAR_FLASH
+        END
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        POPUP "侧栏(&E)"
+        BEGIN
+            MENUITEM "课程导航(&A)",                ID_VIEW_COURSE_GUIDE
+            MENUITEM "课件导航(&C)",                ID_VIEW_COURSEWARE_GUIDE
+        END
+        MENUITEM "电子钟(&K)",                  ID_VIEW_CLOCK
+    END
+    POPUP "页面(&P)"
+    BEGIN
+        MENUITEM "打开空白页(&B)",              ID_PAGE_ADD_BLANK
+        MENUITEM "关闭当前页(&C)",              ID_PAGE_CLOSE_CURRENT
+        MENUITEM "视图属性(&P)",                ID_PAGE_PROPERTY
+        MENUITEM SEPARATOR
+        MENUITEM "上一页(&U)",                  ID_PAGE_PREVIOUS
+        MENUITEM "下一页(&D)",                  ID_PAGE_NEXT
+        MENUITEM "首页(&F)",                    ID_PAGE_FIRST
+        MENUITEM "末页(&L)",                    ID_PAGE_LAST
+        MENUITEM SEPARATOR
+        MENUITEM "全屏(&F)",                    ID_FULL_SCREEN
+        MENUITEM "窗口(&W)",                    ID_NORMAL_SCREEN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADD_CLASS_DIALOG DIALOGEX 0, 0, 189, 65
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 添加课程"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "添加(&A)",IDADD,40,41,45,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,103,41,45,14
+    LTEXT           "课程名:",IDC_STATIC,19,20,29,8
+    EDITTEXT        IDC_EDIT_CLASS_NAME,51,18,113,13,ES_AUTOHSCROLL
+END
+
+IDD_ADD_CHAPTER_DIALOG DIALOGEX 0, 0, 187, 92
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 添加章"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "课程名:",IDC_STATIC,24,18,29,8
+    EDITTEXT        IDC_EDIT_CLASS,54,16,89,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "章名:",IDC_STATIC,32,43,21,8
+    EDITTEXT        IDC_EDIT_CHAPTER,54,41,89,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "添加(&A)",IDADD,34,67,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,101,67,50,14
+END
+
+IDD_ADD_SECTION_DIALOG DIALOGEX 0, 0, 187, 116
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 添加节"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "课程名:",IDC_STATIC,24,18,29,8
+    EDITTEXT        IDC_EDIT_CLASS,54,16,89,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "章名:",IDC_STATIC,32,42,21,8
+    EDITTEXT        IDC_EDIT_CHAPTER,54,39,89,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "节名:",IDC_STATIC,32,66,21,8
+    EDITTEXT        IDC_EDIT_SECTION,54,63,89,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "添加(&A)",IDADD,33,90,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,101,90,50,14
+END
+
+IDD_ADD_COURSEWARE_DIALOG2 DIALOGEX 0, 0, 460, 229
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 添加课件"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "路径名:",IDC_STATIC,14,54,29,8
+    EDITTEXT        IDC_EDIT_PATH,44,51,178,13,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "浏览(&B)",IDC_BROWSE,224,51,47,14
+    LTEXT           "课件名:",IDC_STATIC,29,103,29,8
+    EDITTEXT        IDC_EDIT_NAME,61,100,187,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "类别:",IDC_STATIC,154,130,21,8
+    EDITTEXT        IDC_EDIT_TYPE,179,127,69,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "课程名:",IDC_STATIC,14,14,29,8
+    LTEXT           "章:",IDC_STATIC,131,14,13,8
+    LTEXT           "节:",IDC_STATIC,204,13,13,8
+    PUSHBUTTON      "添加(&A)",IDADD,82,201,45,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,154,201,45,14
+    EDITTEXT        IDC_EDIT_CLASS,14,25,113,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CHAPTER,131,25,68,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_SECTION,204,25,68,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "详细信息",IDC_STATIC,14,78,257,106
+    LTEXT           "大小:",IDC_STATIC,29,128,29,12
+    EDITTEXT        IDC_EDIT_SIZE,61,126,69,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "最后修改时间:",IDC_STATIC,29,157,53,8
+    EDITTEXT        IDC_EDIT_MODTIME,85,155,163,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_EXPLORER,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,279,7,174,215
+END
+
+IDD_ADD_COURSEWARE_DIALOG DIALOGEX 0, 0, 460, 229
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 添加课件"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "路径名:",IDC_STATIC,13,55,29,8
+    EDITTEXT        IDC_EDIT_PATH,43,51,178,13,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "浏览(&B)",IDC_BROWSE,223,51,47,14
+    LTEXT           "课件名:",IDC_STATIC,29,103,29,8
+    EDITTEXT        IDC_EDIT_NAME,61,101,187,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "类别:",IDC_STATIC,153,131,21,8
+    EDITTEXT        IDC_EDIT_TYPE,179,127,69,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "课程名:",IDC_STATIC,13,15,29,8
+    LTEXT           "章:",IDC_STATIC,131,15,13,8
+    LTEXT           "节:",IDC_STATIC,203,13,13,8
+    PUSHBUTTON      "添加(&A)",IDADD,83,201,45,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,155,201,45,14
+    EDITTEXT        IDC_EDIT_CLASS,13,25,113,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHAPTER,131,25,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SECTION,203,25,68,14,ES_AUTOHSCROLL
+    GROUPBOX        "详细信息",IDC_STATIC,13,79,257,106
+    LTEXT           "大小:",IDC_STATIC,29,129,29,12
+    EDITTEXT        IDC_EDIT_SIZE,61,127,69,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "最后修改时间:",IDC_STATIC,29,157,53,8
+    EDITTEXT        IDC_EDIT_MODTIME,85,155,163,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_EXPLORER,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,279,7,174,215
+END
+
+IDD_OUTLOOK_CMD DIALOGEX 0, 0, 221, 153
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 选项状态"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "向上(&U)",IDD_OUTLOOK_CMD_BUTTON_UP,164,8,50,14
+    PUSHBUTTON      "向下(&D)",IDD_OUTLOOK_CMD_BUTTON_DOWN,164,26,50,14
+    PUSHBUTTON      "重置(&R)",IDD_OUTLOOK_CMD_BUTTON_RESET,164,50,50,14
+    DEFPUSHBUTTON   "确定(&O)",IDOK,97,131,50,14,WS_GROUP
+    DEFPUSHBUTTON   "取消(&C)",IDCANCEL,159,131,50,14,WS_GROUP
+    CONTROL         "",IDD_OUTLOOK_CMD_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,3,3,152,119
+END
+
+IDD_PROPERTIES DIALOGEX 0, 0, 325, 62
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 视图属性"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "标题",IDC_STATIC,7,7,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_LABELED,40,7,116,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "提示",IDC_STATIC,7,24,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TOOLTIPED,40,24,220,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "URL",IDC_STATIC,7,41,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_URLED,40,41,220,14,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "确定(&O)",IDOK,268,7,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,268,24,50,14
+END
+
+IDD_CLOCK_DIALOG DIALOGEX 0, 0, 99, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 电子时钟"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "ClockST",IDC_CLOCKFRAME,0,0,99,47
+END
+
+IDD_ADD_COURSEWARE_DIALOG3 DIALOGEX 0, 0, 328, 260
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 批量添加课件"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,186,239,50,14
+    PUSHBUTTON      "取消",IDCANCEL,251,239,50,14
+    LTEXT           "课程名:",IDC_STATIC,15,18,29,8
+    LTEXT           "章名:",IDC_STATIC,23,36,21,8
+    LTEXT           "节名:",IDC_STATIC,23,53,21,8
+    PUSHBUTTON      "加入...",IDC_BUTTON_BROWSE,247,32,52,14
+    EDITTEXT        IDC_EDIT_CLASS,47,14,138,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SECTION,47,50,174,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHAPTER,47,32,174,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "清除",IDC_BUTTON_DELETE,247,51,52,14
+END
+
+IDD_ADD_CHAPTER_DIALOG2 DIALOGEX 0, 0, 187, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 添加章"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "课程名:",IDC_STATIC,24,18,29,8
+    LTEXT           "章名:",IDC_STATIC,32,43,21,8
+    EDITTEXT        IDC_EDIT_CHAPTER,54,41,89,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "添加(&A)",IDADD,34,67,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,101,67,50,14
+    COMBOBOX        IDC_COMBO_CLASS,54,15,89,110,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ADD_SECTION_DIALOG2 DIALOGEX 0, 0, 187, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " 添加节"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "课程名:",IDC_STATIC,24,18,29,8
+    LTEXT           "章名:",IDC_STATIC,32,42,21,8
+    LTEXT           "节名:",IDC_STATIC,32,66,21,8
+    EDITTEXT        IDC_EDIT_SECTION,54,63,89,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "添加(&A)",IDADD,33,90,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,101,90,50,14
+    COMBOBOX        IDC_COMBO_CLASS,54,15,89,15,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CHAPTER,54,40,89,15,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 197, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 大学数学辅助教学系统"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,ID_DUMMY,19,25,21,21
+    DEFPUSHBUTTON   "确定",IDOK,73,79,50,14,WS_GROUP
+    LTEXT           "大学数学辅助教学系统(MTAS)         Version 1.0\n\n  Copyright (C) 2008 MTAS",
+                    IDC_STATIC,48,17,108,37
+    LTEXT           "联系作者",IDC_STATIC_EMAIL,81,61,33,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MTAS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MTAS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MTAS.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MTAS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ADD_CLASS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_ADD_CHAPTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ADD_SECTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_ADD_COURSEWARE_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 453
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_ADD_COURSEWARE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 453
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ADD_COURSEWARE_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_ADD_CHAPTER_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ADD_SECTION_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ADD_COURSEWARE_DIALOG2 DLGINIT
+BEGIN
+    IDC_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x1afa, 0x0000, 0x2162, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_ADD_COURSEWARE_DIALOG DLGINIT
+BEGIN
+    IDC_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x1afa, 0x0000, 0x2162, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE                WAVE    DISCARDABLE     "res\\click.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "大学数学辅助教学系统 Ver 1.0\n\n大学数学辅助教学系统 Ver 1.0\n\n\n大学数学辅助教学系统.Document\n大学数学辅助教学系统 Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "大学数学辅助教学系统 Ver 1.0"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Add a new DocObject to this container\nNew DocObject"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACKGROUND          BITMAP  MOVEABLE PURE   "res\\Background.BMP"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CODE_PROJECT        ICON    DISCARDABLE     "res\\code_project.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  MOVEABLE PURE   "res\\TabBig.bmp"
+IDB_BITMAP2             BITMAP  MOVEABLE PURE   "res\\TabSmall.bmp"
+IDB_BITMAP3             BITMAP  MOVEABLE PURE   "res\\TabDisabledBig.bmp"
+IDB_BITMAP4             BITMAP  MOVEABLE PURE   "res\\TabDisabledSmall.bmp"
+IDB_CODE_PROJECT        BITMAP  MOVEABLE PURE   "res\\code_project.bmp"
+IDB_TREE_CLOSED         BITMAP  MOVEABLE PURE   "res\\tree_closed.bmp"
+IDB_TREE_OPENED         BITMAP  MOVEABLE PURE   "res\\tree_opened.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONS DIALOGEX 0, 0, 149, 129
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Bitmap Background",IDC_BK_BITMAP,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,7,7,77,10
+    CONTROL         "Gradient Background",IDC_BK_GRADIENT,"Button",
+                    BS_AUTORADIOBUTTON,7,44,83,10
+    CONTROL         "Normal Background (fill)",IDC_BK_NORMAL,"Button",
+                    BS_AUTORADIOBUTTON,7,81,91,10
+    CONTROL         "Tiled (checked) or Stretch to fit",IDC_TILED,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,25,23,115,10
+    CONTROL         "Horizontal (checked) or Vertical Gradient",IDC_HORIZ,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,25,
+                    57,91,18
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,103,135,1
+    DEFPUSHBUTTON   "OK",IDOK,59,108,37,14
+    PUSHBUTTON      "Cancel",IDCANCEL,105,108,37,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSORMOVE          CURSOR  DISCARDABLE     "res\\DRAGMOVE.CUR"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MTAS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

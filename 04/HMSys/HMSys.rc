@@ -1,0 +1,920 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\HMSys.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\HMSys.ico"
+IDR_HMSYSTYPE           ICON    DISCARDABLE     "res\\HMSysDoc.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\unlock.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\bookmark_add.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\bookmarks_list_add.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\button_cancel.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\delete_group.ico"
+IDI_ICON6               ICON    DISCARDABLE     "res\\edit.ico"
+IDI_ICON7               ICON    DISCARDABLE     "res\\exec.ico"
+IDI_ICON8               ICON    DISCARDABLE     "res\\Exit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_CLOCKST_SMALL       BITMAP  DISCARDABLE     "res\\ClockST_small.bmp"
+IDB_CLOCKST_BIG         BITMAP  DISCARDABLE     "res\\ClockST_big.bmp"
+IDB_CLOCKST_PANE        BITMAP  DISCARDABLE     "res\\ClockST_pane.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  32, 32
+BEGIN
+    BUTTON      IDT_EMP_ADD
+    SEPARATOR
+    BUTTON      IDT_CHECK_MANAGE
+    SEPARATOR
+    BUTTON      IDT_USER_MANAGE
+    SEPARATOR
+    BUTTON      IDT_WAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "系统管理"
+    BEGIN
+        MENUITEM "用户管理",                    IDM_USER_MANAGE
+        MENUITEM "修改密码",                    IDM_UPDATE_PWD
+        MENUITEM "备份数据库",                  IDM_BACKUP
+        MENUITEM "还原数据库",                  IDM_RESTORE
+    END
+    POPUP "职工管理"
+    BEGIN
+        MENUITEM "添加职工信息",                IDM_EMP_ADD
+        MENUITEM "职工信息管理",                IDM_EMP_INFO
+    END
+    POPUP "部门管理"
+    BEGIN
+        MENUITEM "部门管理",                    IDM_DEPART_MANAGE
+    END
+    POPUP "考勤管理"
+    BEGIN
+        MENUITEM "节假日管理",                  IDM_HOLIDAT_MANAGE
+        MENUITEM "考勤管理",                    IDM_CHECK_MANAGE
+        MENUITEM "考勤信息浏览",                IDM_CHECK_INFO
+    END
+    POPUP "工资管理"
+    BEGIN
+        MENUITEM "工资计算公式",                IDM_WAGE_CAL
+        MENUITEM "工资基本信息管理",            IDM_WAGEMANAGE
+        MENUITEM "员工工资统计",                IDM_WAGE_TOTAL
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 HMSys(&A)...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 HMSys"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "HMSys 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_USER_MANAGE_DLG DIALOG DISCARDABLE  0, 0, 275, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户管理"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_USER,173,18,82,16,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,173,47,84,86,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PWD1,173,71,82,16,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PWD2,173,97,82,16,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "清空",IDC_CLEAN,121,140,39,15
+    PUSHBUTTON      "添加",IDC_ADD,169,140,39,15
+    PUSHBUTTON      "注销",IDC_DEL,217,140,39,15
+    GROUPBOX        "用户列表：",IDC_STATIC,10,10,104,157
+    LISTBOX         IDC_LIST1,12,22,98,142,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "用户名：",IDC_STATIC,123,20,41,20
+    LTEXT           "确  认：",IDC_STATIC,123,100,41,20
+    LTEXT           "密  码：",IDC_STATIC,123,74,41,20
+    LTEXT           "类  型：",IDC_STATIC,123,47,41,20
+    GROUPBOX        "操作：",IDC_STATIC,116,127,146,39
+END
+
+IDD_UPDATE_PWD_DLG DIALOG DISCARDABLE  0, 0, 196, 140
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,34,105,50,14
+    PUSHBUTTON      "退出",IDCANCEL,109,105,50,14
+    EDITTEXT        IDC_PWD1,79,46,82,16,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PWD2,79,72,82,16,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "确  认：",IDC_STATIC,29,75,41,20
+    LTEXT           "密  码：",IDC_STATIC,29,50,41,20
+    EDITTEXT        IDC_ID,79,20,82,16,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "用户名：",IDC_STATIC,29,24,41,20
+END
+
+IDD_EMP_ADD_DLG DIALOGEX 0, 0, 279, 245
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "职工信息添加"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NAME,69,18,64,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AGE,69,43,64,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,69,70,66,126,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ADDR,69,92,64,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,69,115,66,70,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,69,139,66,13
+    EDITTEXT        IDC_MORE,67,163,195,53,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHONE,197,139,65,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "添加",IDC_BTN_ADD,7,224,50,14
+    PUSHBUTTON      "离开",IDCANCEL,222,224,50,14
+    LTEXT           "姓  名：",IDC_STATIC,19,19,39,15
+    LTEXT           "年  龄：",IDC_STATIC,19,43,39,15
+    LTEXT           "性  别：",IDC_STATIC,19,67,39,15
+    LTEXT           "籍  贯：",IDC_STATIC,19,91,39,15
+    LTEXT           "部  门：",IDC_STATIC,19,115,39,15
+    LTEXT           "出生日期：",IDC_STATIC,19,139,49,15
+    LTEXT           "联系方式：",IDC_STATIC,147,139,49,15
+    LTEXT           "备  注：",IDC_STATIC,19,165,39,15
+    LTEXT           "相  片：",IDC_STATIC,147,19,39,15
+    CONTROL         "",IDC_PHOTO,"Static",SS_BLACKFRAME | SS_SUNKEN,192,18,
+                    73,93,WS_EX_STATICEDGE
+END
+
+IDD_DEPART_MANAGE_DLG DIALOG DISCARDABLE  0, 0, 338, 245
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "部门管理"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_NAME,203,19,112,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MANAGER,203,44,112,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHONE,203,69,112,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MORE,139,116,184,76,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "保存",IDC_SAVE,285,208,42,13
+    PUSHBUTTON      "添加",IDC_ADD,141,208,42,13
+    PUSHBUTTON      "修改",IDC_UPDATE,189,208,42,13
+    PUSHBUTTON      "删除",IDC_DEL,237,208,42,13
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,7,124,231
+    LTEXT           "部门名称：",IDC_STATIC,137,24,48,15
+    LTEXT           "部门主管：",IDC_STATIC,137,48,48,15
+    LTEXT           "部门电话：",IDC_STATIC,137,72,48,15
+    LTEXT           "备    注：",IDC_STATIC,137,96,48,15
+END
+
+IDD_EMPINFO_MANAGE_DLG DIALOG DISCARDABLE  0, 0, 413, 266
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "职工基本信息管理"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,7,100,252
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,107,7,299,204
+    PUSHBUTTON      "添加",IDC_ADD,119,233,48,14
+    PUSHBUTTON      "修改",IDC_UPDATE,193,232,48,14
+    PUSHBUTTON      "删除",IDC_DEL,267,232,48,14
+    PUSHBUTTON      "查询",IDC_INDEX,341,231,48,14
+END
+
+IDD_EMP_UPDATE_DLG DIALOGEX 0, 0, 281, 251
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改职工信息"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NAME,68,16,64,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AGE,68,41,64,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,68,68,66,126,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ADDR,68,90,64,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,68,113,66,70,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,68,137,66,13
+    EDITTEXT        IDC_MORE,66,161,195,53,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHONE,196,137,65,15,ES_AUTOHSCROLL
+    LTEXT           "姓  名：",IDC_STATIC,18,17,39,15
+    LTEXT           "年  龄：",IDC_STATIC,18,41,39,15
+    LTEXT           "性  别：",IDC_STATIC,18,65,39,15
+    LTEXT           "籍  贯：",IDC_STATIC,18,89,39,15
+    LTEXT           "部  门：",IDC_STATIC,18,113,39,15
+    LTEXT           "出生日期：",IDC_STATIC,18,137,49,15
+    LTEXT           "联系方式：",IDC_STATIC,146,137,49,15
+    LTEXT           "备  注：",IDC_STATIC,18,163,39,15
+    LTEXT           "相  片：",IDC_STATIC,146,17,39,15
+    CONTROL         "",IDC_PHOTO,"Static",SS_BLACKFRAME | SS_SUNKEN,191,16,
+                    73,93,WS_EX_STATICEDGE
+    PUSHBUTTON      "修改",IDC_UPDATE,7,228,46,16
+    PUSHBUTTON      "退出",IDC_EXIT,228,228,46,16
+END
+
+IDD_HOLIDAY_MANAGE_DLG DIALOG DISCARDABLE  0, 0, 348, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "节假日设置"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,185,193
+    LTEXT           "名  称：",IDC_STATIC,205,90,46,18
+    LTEXT           "日  期：",IDC_STATIC,205,115,46,18
+    EDITTEXT        IDC_NAME,257,86,78,16,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,257,114,78,14
+    PUSHBUTTON      "添加",IDC_ADD,207,148,44,16
+    PUSHBUTTON      "修改",IDC_UPDATE,271,147,44,16
+    PUSHBUTTON      "保存",IDC_SAVE,271,171,44,16
+    PUSHBUTTON      "删除",IDC_DEL,208,171,44,16
+    LTEXT           "Static",IDC_SHOWTIME,215,14,112,57
+END
+
+IDD_CHECK_MANAGE_DLG DIALOG DISCARDABLE  0, 0, 280, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "考勤管理"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,69,15,131,15,ES_AUTOHSCROLL
+    CONTROL         "出勤",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    19,45,34,17
+    CONTROL         "缺勤",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,61,45,34,
+                    17
+    CONTROL         "出差",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,103,45,34,
+                    17
+    CONTROL         "休息",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,142,45,34,
+                    17
+    CONTROL         "迟到",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    27,86,40,15
+    CONTROL         "早退",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    88,86,40,15
+    CONTROL         "病假",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    149,86,40,15
+    CONTROL         "事假",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    210,86,40,15
+    PUSHBUTTON      "确定",IDC_SURE,215,15,46,15
+    LTEXT           "员工号：",IDC_STATIC,22,18,41,18
+    GROUPBOX        "",IDC_STATIC,16,71,241,43
+    LTEXT           "备注：",IDC_STATIC,18,123,30,18
+    EDITTEXT        IDC_MORE,51,122,209,61,ES_AUTOHSCROLL
+    PUSHBUTTON      "加班",IDC_OVERTIME,215,46,46,15
+END
+
+IDD_CHECK_INFO_DLG DIALOG DISCARDABLE  0, 0, 353, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "考勤信息"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,339,163
+    LTEXT           "员工号：",IDC_STATIC,19,190,37,15
+    EDITTEXT        IDC_ID,67,188,58,15,ES_AUTOHSCROLL
+    LTEXT           "日期：",IDC_STATIC,134,189,37,15
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,184,188,60,16
+    PUSHBUTTON      "查询",IDC_INDEX,253,188,37,15
+    PUSHBUTTON      "删除",IDC_DEL,302,188,37,15
+END
+
+IDD_OVERTIME_DLG DIALOG DISCARDABLE  0, 0, 161, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "加班管理"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,89,61,45,14
+    COMBOBOX        IDC_COMBO1,80,18,67,77,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_TIME,79,40,67,14,ES_AUTOHSCROLL
+    LTEXT           "加 班 类 型 ：",IDC_STATIC,18,19,57,16
+    LTEXT           "时间（小时）：",IDC_STATIC,18,41,57,16
+END
+
+IDD_WAGE_CAL_DLG DIALOG DISCARDABLE  0, 0, 301, 160
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工资计算公式"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_CHUCHAI,69,39,73,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BINGJIA,209,39,73,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHIJIA,69,67,73,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PINGSHI,209,67,73,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHUANGXIU,69,95,73,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FADING,209,95,73,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_SURE,217,123,46,18
+    CTEXT           "注意：   以下工资按百分比",IDC_STATIC,7,13,287,14
+    LTEXT           "出差工资：",IDC_STATIC,18,41,47,17
+    LTEXT           "病假工资：",IDC_STATIC,159,41,47,17
+    LTEXT           "事假工资：",IDC_STATIC,18,68,47,17
+    LTEXT           "平时加班：",IDC_STATIC,159,68,47,17
+    LTEXT           "双休日加班：",IDC_STATIC,18,95,47,17
+    LTEXT           "法定假日加班：",IDC_STATIC,159,95,47,17
+END
+
+IDD_WAGE_MANAGE_DLG DIALOG DISCARDABLE  0, 0, 346, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工资基本信息管理"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,7,110,257
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,117,7,222,174
+    LTEXT           "员工 ID：",IDC_STATIC,127,192,38,16
+    LTEXT           "所在部门：",IDC_STATIC,228,192,46,16
+    LTEXT           "月薪：",IDC_STATIC,127,213,38,16
+    LTEXT           "进入时间：",IDC_STATIC,228,213,46,16
+    EDITTEXT        IDC_ID,169,189,55,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WAGE,169,211,55,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,279,189,60,84,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,279,212,60,14
+    PUSHBUTTON      "添加",IDC_ADD,125,242,40,14
+    PUSHBUTTON      "修改",IDC_UPDATE,167,242,40,14
+    PUSHBUTTON      "删除",IDC_DEL,209,242,40,14
+    PUSHBUTTON      "查询",IDC_INDEX,251,242,40,14
+    PUSHBUTTON      "保存",IDC_SAVE,293,242,40,14
+END
+
+IDD_WAGE_DLG DIALOG DISCARDABLE  0, 0, 451, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "员工工资统计"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,437,173
+    LTEXT           "员工ID：",IDC_STATIC,44,193,46,16
+    LTEXT           "月份：",IDC_STATIC,189,193,46,16
+    EDITTEXT        IDC_ID,91,191,73,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,239,192,69,79,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON1,350,193,53,14
+END
+
+IDD_LOAD_DLG DIALOG DISCARDABLE  0, 0, 207, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录界面"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,42,77,39,14
+    PUSHBUTTON      "退出",IDCANCEL,110,77,39,14
+    LTEXT           "用户名：",IDC_STATIC,33,32,46,15
+    LTEXT           "密  码：",IDC_STATIC,33,53,46,15
+    EDITTEXT        IDC_USER,91,30,70,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PWD,91,51,70,16,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_RESTORE_DLG DIALOG DISCARDABLE  0, 0, 271, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "还原数据库"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "还原",IDC_RESTORE,157,61,39,14
+    PUSHBUTTON      "退出",IDCANCEL,210,61,39,14
+    EDITTEXT        IDC_PATH,21,29,193,18,ES_AUTOHSCROLL
+    PUSHBUTTON      ". . .",IDC_BUTTON1,221,29,36,17
+    GROUPBOX        "注意：如果数据出错请还原数据",IDC_STATIC,7,7,258,74
+END
+
+IDD_BACKUP_DLG DIALOG DISCARDABLE  0, 0, 272, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "备份数据库"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "备份",IDC_BACKUP,162,57,38,14
+    PUSHBUTTON      "退出",IDCANCEL,206,57,38,14
+    EDITTEXT        IDC_PATH,21,29,193,18,ES_AUTOHSCROLL
+    PUSHBUTTON      ". . .",IDC_BUTTON1,221,29,36,17
+    GROUPBOX        "注意：为了安全性建议经常备份数据库",IDC_STATIC,7,7,258,
+                    74
+END
+
+IDD_EMP_INDEX_DLG DIALOG DISCARDABLE  0, 0, 245, 142
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "职工信息查询"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_ID,95,58,101,18,ES_AUTOHSCROLL
+    LTEXT           "职工编号：",IDC_STATIC,38,61,47,18
+    PUSHBUTTON      "查询",IDOK,178,113,46,15
+    EDITTEXT        IDC_NAME,95,86,101,18,ES_AUTOHSCROLL
+    LTEXT           "职工姓名：",IDC_STATIC,37,89,47,18
+    CONTROL         "根据编号",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,40,18,51,17
+    CONTROL         "根据姓名",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,139,17,
+                    51,17
+    GROUPBOX        "查询方式：",IDC_STATIC,7,7,231,34
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HMSys Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HMSys\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HMSys.EXE\0"
+            VALUE "ProductName", "HMSys 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_USER_MANAGE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_UPDATE_PWD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_EMP_ADD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DEPART_MANAGE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 331
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_EMPINFO_MANAGE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 406
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_EMP_UPDATE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_HOLIDAY_MANAGE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_CHECK_MANAGE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_CHECK_INFO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_OVERTIME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_WAGE_CAL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_WAGE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 444
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_LOAD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_RESTORE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_BACKUP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_EMP_INDEX_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_USER_MANAGE_DLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 7, 0
+0xdcb9, 0xedc0, 0xb1d4, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xd5c6, 0xa8cd, 0xc3d3, 0xa7bb, "\000" 
+    0
+END
+
+IDD_EMP_ADD_DLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0xaec5, "\000" 
+    0
+END
+
+IDD_EMP_UPDATE_DLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0xaec5, "\000" 
+    0
+END
+
+IDD_OVERTIME_DLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xbdc6, 0xb1ca, 0xd3bc, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 11, 0
+0xabcb, 0xddd0, 0xd5c8, 0xd3bc, 0xe0b0, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0xa8b7, 0xa8b6, 0xd9bc, 0xd5c8, 0xd3bc, 0xe0b0, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\default1.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "res\\hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "HMSys\n\nHMSys\n\n\nHMSys.Document\nHMSys Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "HMSys"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\HMSys.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

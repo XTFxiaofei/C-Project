@@ -1,0 +1,27 @@
+// MytreeCtrl1.cpp: implementation of the MytreeCtrl class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "HCWORD.h"
+#include "MytreeCtrl1.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+MytreeCtrl::MytreeCtrl()
+{
+
+}
+
+MytreeCtrl::~MytreeCtrl()
+{
+
+}

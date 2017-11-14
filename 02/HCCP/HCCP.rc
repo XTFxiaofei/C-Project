@@ -1,0 +1,540 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\HCCP.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\HCCP.ico"
+ICON_PREVIEW            ICON    DISCARDABLE     "IMAGE\\preview.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 HCCP"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "HCCP 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_HCCP_DIALOG DIALOGEX 0, 0, 503, 350
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "学生综合测评系统主界面"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,7,156,322
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,165,46,331,186
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",TCS_FIXEDWIDTH,165,235,
+                    331,102
+    CTEXT           "右键菜单可添加删除院系班级课程",IDC_STATIC,7,329,156,14,
+                    SS_CENTERIMAGE
+    CTEXT           "",IDC_BIAOTI,166,7,330,34,SS_CENTERIMAGE
+END
+
+IDD_ADDDLG DIALOG DISCARDABLE  0, 0, 216, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,105,50,14
+    PUSHBUTTON      "离开",IDCANCEL,158,105,50,14
+    CTEXT           "课程名：",IDC_MZ,42,53,41,17,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME,94,53,70,15,ES_AUTOHSCROLL
+    CTEXT           "课程号：",IDC_KECHENGHAO,39,32,46,17,SS_CENTERIMAGE
+    EDITTEXT        IDC_CNO,94,32,70,15,ES_AUTOHSCROLL
+    CTEXT           "学分：",IDC_XXUEFEN,39,74,46,17,SS_CENTERIMAGE
+    EDITTEXT        IDC_CGRADE,94,74,70,15,ES_AUTOHSCROLL
+    CONTROL         "添加班级新成员",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,14,70,13
+    COMBOBOX        IDC_XHAO,94,32,70,55,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_XSCJXG DIALOG DISCARDABLE  0, 0, 270, 107
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CTEXT           "学号：",IDC_STATIC,68,18,38,12,SS_CENTERIMAGE
+    CTEXT           "成绩：",IDC_STATIC,68,47,37,18,SS_CENTERIMAGE
+    EDITTEXT        IDC_SNO,109,15,74,15,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SGRADE,109,51,74,13,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_GROUP,183,51,6,12
+    PUSHBUTTON      "确定\r\n修改",IDC_XIU,211,23,29,37,BS_MULTILINE
+    PUSHBUTTON      "删除\r\n成员",IDC_DELCY,19,23,29,37,BS_MULTILINE
+    CTEXT           "姓名:",IDC_STATIC,68,31,30,18,SS_CENTERIMAGE
+    EDITTEXT        IDC_SNAME,109,34,74,13,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_XSCJCX DIALOG DISCARDABLE  0, 0, 233, 95
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CTEXT           "查找关键字：",IDC_STATIC,18,37,53,19,SS_CENTERIMAGE
+    PUSHBUTTON      "确定\r\n查找",IDC_FIND,167,15,28,35,BS_MULTILINE
+    EDITTEXT        IDC_GUANJIAN,82,39,72,12,ES_AUTOHSCROLL
+    CTEXT           "查找范围：",IDC_STATIC,19,12,54,16,SS_CENTERIMAGE
+    COMBOBOX        IDC_FANWEI,82,15,72,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 188, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找结果"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,27,174,124
+    CTEXT           "显示查找结果记录个数",IDC_TIAOMU,44,4,98,18,
+                    SS_CENTERIMAGE
+END
+
+IDD_XSCJPX DIALOG DISCARDABLE  0, 0, 221, 95
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CTEXT           "排序依据：",IDC_STATIC,13,20,62,18,SS_CENTERIMAGE
+    COMBOBOX        IDC_YIJU,81,23,64,46,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "确定排序",IDC_SORT,155,22,44,13
+END
+
+IDD_ZHPCDLG DIALOGEX 0, 0, 414, 229
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "学生综合测评"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST3,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,8,7,397,149
+    CTEXT           "智育占：",IDC_STATIC,11,170,49,20,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "德育占：",IDC_STATIC,110,170,49,20,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "体育占：",IDC_STATIC,209,170,49,20,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "附加分占：",IDC_STATIC,308,170,49,20,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ZHIYU,60,170,49,20,ES_CENTER | ES_AUTOHSCROLL,
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_DEYU,159,170,49,20,ES_CENTER | ES_AUTOHSCROLL,
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_TIYU,258,170,49,20,ES_CENTER | ES_AUTOHSCROLL,
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_FUJIA,357,170,49,20,ES_CENTER | ES_AUTOHSCROLL,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "计算总成绩",IDC_JISUAN,48,203,59,19
+    PUSHBUTTON      "总成绩排序",IDC_ZPX,182,203,59,19
+    PUSHBUTTON      "打印预览",IDC_PRINT,316,203,59,19
+END
+
+IDD_XSZHPC DIALOG DISCARDABLE  0, 0, 220, 112
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CTEXT           "学院：",IDC_STATIC,14,16,53,16,SS_CENTERIMAGE
+    COMBOBOX        IDC_XUEYUAN,72,17,74,45,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "班级：",IDC_STATIC,14,38,53,16,SS_CENTERIMAGE
+    COMBOBOX        IDC_BANJI,72,40,74,45,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "综合测评",IDC_ZHPCBT,160,23,43,20,BS_MULTILINE
+END
+
+IDD_XKXFXG DIALOG DISCARDABLE  0, 0, 212, 84
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CTEXT           "学科名：",IDC_STATIC,20,14,47,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_XKM,85,14,63,17,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CTEXT           "学    分：",IDC_STATIC,20,43,47,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_XUEKF,85,42,63,17,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "确定\r\n修改",IDC_XFXG,171,17,27,35,BS_MULTILINE
+END
+
+DLG_SYS_PREVIEW DIALOG DISCARDABLE  0, 0, 450, 300
+STYLE DS_CONTROL | WS_CHILD | WS_VSCROLL | WS_HSCROLL
+FONT 9, "宋体"
+BEGIN
+END
+
+DLG_SYS_PREPARENT DIALOG DISCARDABLE  0, 0, 450, 299
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "打印预览"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_SUP,"Static",SS_BLACKFRAME | SS_SUNKEN,0,0,449,1
+    CONTROL         "",IDC_SDOWN,"Static",SS_BLACKFRAME | SS_SUNKEN,0,17,449,
+                    1
+    LISTBOX         IDC_LIST1,0,5,8,9,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+DLG_SYS_PREGOTO DIALOG DISCARDABLE  0, 0, 139, 73
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "转到页"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "页码(&P):",IDC_STATIC,25,18,33,8
+    EDITTEXT        EDT_GOTO,63,15,39,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",SPIN_GOTO,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,103,15,
+                    10,14
+    PUSHBUTTON      "确定(&O)",BTN_OK,16,44,50,15
+    PUSHBUTTON      "取消(&C)",BTN_CANCEL,73,44,50,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HCCP Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HCCP\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HCCP.EXE\0"
+            VALUE "ProductName", "HCCP 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_HCCP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 496
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_ADDDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_XSCJXG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_XSCJCX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_XSCJPX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_ZHPCDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 407
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_XSZHPC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_XKXFXG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    DLG_SYS_PREVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 432
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    DLG_SYS_PREPARENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 443
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 292
+    END
+
+    DLG_SYS_PREGOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\TreeBoot.bmp"
+BMP_BACK                BITMAP  DISCARDABLE     "image\\bmp_back.bmp"
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "image\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_XSCJCX DLGINIT
+BEGIN
+    IDC_FANWEI, 0x403, 5, 0
+0xa7d1, 0xc5ba, "\000" 
+    IDC_FANWEI, 0x403, 5, 0
+0xd5d0, 0xfbc3, "\000" 
+    IDC_FANWEI, 0x403, 5, 0
+0xc9b3, 0xa8bc, "\000" 
+    0
+END
+
+IDD_XSCJPX DLGINIT
+BEGIN
+    IDC_YIJU, 0x403, 5, 0
+0xa7d1, 0xc5ba, "\000" 
+    IDC_YIJU, 0x403, 5, 0
+0xd5d0, 0xfbc3, "\000" 
+    IDC_YIJU, 0x403, 5, 0
+0xc9b3, 0xa8bc, "\000" 
+    0
+END
+
+IDD_XSZHPC DLGINIT
+BEGIN
+    IDC_XUEYUAN, 0x403, 9, 0
+0xfdca, 0xedc0, 0xa7d1, 0xbad4, "\000" 
+    IDC_XUEYUAN, 0x403, 9, 0
+0xa8b7, 0xfed5, 0xa7d1, 0xbad4, "\000" 
+    IDC_XUEYUAN, 0x403, 9, 0
+0xe2cd, 0xefd3, 0xa7d1, 0xbad4, "\000" 
+    IDC_BANJI, 0x403, 8, 0
+0xa8b7, 0xfed5, 0x3530, 0x0031, 
+    IDC_BANJI, 0x403, 8, 0
+0xa8b7, 0xfed5, 0x3530, 0x0032, 
+    IDC_BANJI, 0x403, 8, 0
+0xa8b7, 0xfed5, 0x3530, 0x0033, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      TBTN_TOP
+    SEPARATOR
+    BUTTON      TBTN_PREVIOUS
+    SEPARATOR
+    BUTTON      TBTN_GOTO
+    SEPARATOR
+    BUTTON      TBTN_NEXT
+    SEPARATOR
+    BUTTON      TBTN_LAST
+    SEPARATOR
+    BUTTON      TBTN_EXIT
+    SEPARATOR
+    BUTTON      TBTN_PRINT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 HCCP(&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POPUP_MEMU1          "添加"
+    ID_POPUP_MEMU2          "删除"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\HCCP.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HCCP - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\hc2008\LOCALS~1\Temp\RSP4C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/HCCP.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VC++ÊµÀý\Ô´³ÌÐò\02\HCCP\HCCP.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\hc2008\LOCALS~1\Temp\RSP4C.tmp" 
+Creating temporary file "C:\DOCUME~1\hc2008\LOCALS~1\Temp\RSP4D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/HCCP.pdb" /debug /machine:I386 /out:"Debug/HCCP.exe" /pdbtype:sept 
+".\Debug\ADDDLG.obj"
+".\Debug\ADOConn.obj"
+".\Debug\HCCP.obj"
+".\Debug\HCCPDlg.obj"
+".\Debug\Hutext.obj"
+".\Debug\JIEGUO.obj"
+".\Debug\MyTree.obj"
+".\Debug\PreGoto.obj"
+".\Debug\PreParent.obj"
+".\Debug\PreView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\XKXFXG.obj"
+".\Debug\XSCJCX.obj"
+".\Debug\XSCJPX.obj"
+".\Debug\XSCJXG.obj"
+".\Debug\XSZHPC.obj"
+".\Debug\ZHPCDLG.obj"
+".\Debug\HCCP.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\hc2008\LOCALS~1\Temp\RSP4D.tmp"
+<h3>Output Window</h3>
+Compiling...
+HCCP.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+HCCP.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

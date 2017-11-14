@@ -1,0 +1,1270 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\HCDB.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\HCDB.ico"
+IDR_HCDBTYPE            ICON    DISCARDABLE     "res\\HCDBDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_SMALL_IMAGELIST     BITMAP  DISCARDABLE     "res\\SmallIcon.bmp"
+IDB_IMAGELIST           BITMAP  DISCARDABLE     "res\\LargeIcon.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "Bliss.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 HCDB(&A)...",            ID_APP_ABOUT
+    END
+    MENUITEM "前台管理",                    IDM_FOREMANGE
+    POPUP "出入库管理"
+    BEGIN
+        MENUITEM "主界面",                      IDM_MAIN
+        MENUITEM "登记入库",                    IDM_IN_STOCKMANGE
+        MENUITEM "入库单查询",                  IDM_INSTOCKQUERY
+        MENUITEM "入库明细",                    IDM_INDETAIL
+        MENUITEM "出库明细",                    IDM_OUTDETAIL
+        MENUITEM "登记出库",                    IDM_OUT_STOCKMANGE
+        MENUITEM "出库单查询",                  IDM_OUTSTOCKQUERY
+        MENUITEM "入库情况汇总",                IDM_GETHER_IN
+        MENUITEM "出库情况汇总",                IDM_GETHER_OUT
+    END
+    POPUP "后台管理"
+    BEGIN
+        MENUITEM "销售退货",                    IDF_SALESQUIT
+        MENUITEM "用户管理",                    ID_USERMANAGE
+        MENUITEM "数据备份",                    IDF_BACKUP
+        MENUITEM "数据还原",                    IDF_RESTORE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 HCDB"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "HCDB 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MQQAPPEARANCE_DIALOG DIALOGEX 0, 0, 88, 254
+STYLE DS_3DLOOK | WS_CHILD
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_FOREMANGE DIALOGEX 0, 0, 354, 277
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "前台管理"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "商品编号:",IDC_STATIC,14,110,38,11
+    EDITTEXT        IDC_MERCID,53,110,67,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "数量:",IDC_STATIC,128,110,19,8,WS_TABSTOP
+    GROUPBOX        "已购商品列表",IDC_STATIC,13,7,325,210
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,15,24,322,79
+    EDITTEXT        IDC_MERCNUM,155,110,53,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "单品折扣: ",IDC_STATIC,233,111,37,9
+    EDITTEXT        IDC_SINGLEDISCOUNT,274,108,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC,18,126,106,88
+    LTEXT           "交易号：",IDC_STATIC,129,148,36,10
+    EDITTEXT        IDC_BUYNUM,168,147,39,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    PUSHBUTTON      "确认收款",IDC_BTNOK,147,194,36,14
+    GROUPBOX        "",IDC_STATIC,216,135,115,77
+    PUSHBUTTON      "删除商品",IDC_BTN_DELMERC,219,146,49,15
+    PUSHBUTTON      "锁住屏幕",IDC_BTN_LOCKSCREEN,275,146,49,15
+    PUSHBUTTON      "取消交易",IDC_BTNCANCELSALES,219,170,49,15
+    PUSHBUTTON      "换收银员",IDC_BUTTON6,277,170,49,15
+    PUSHBUTTON      "商品查询",IDC_BUTTON7,219,191,49,15
+    PUSHBUTTON      "退出收银",IDC_BTNQUIT,277,191,49,15
+    CONTROL         "",IDC_ALLMONEY,"Static",SS_LEFTNOWORDWRAP | WS_BORDER | 
+                    WS_GROUP,23,135,92,24
+    LTEXT           "",IDC_REALLMONEY,23,161,28,24,0,WS_EX_ACCEPTFILES
+    LTEXT           "",IDC_BACKMONEY,23,187,92,24,WS_BORDER
+    EDITTEXT        IDC_EDIT_REALMONEY,51,173,63,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    LTEXT           "",IDC_ANOTHER,51,161,63,12
+    CONTROL         "",IDC_SEPARATOR,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    7,221,341,1
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,223,340,47
+END
+
+IDF_IN_STOCKMANGE DIALOG DISCARDABLE  0, 0, 485, 299
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "库存情况 ",IDC_STATIC,16,13,326,166
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,23,28,310,142
+    GROUPBOX        "操作结果",IDC_STATIC,17,185,325,106
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,23,195,310,92
+    COMBOBOX        IDC_COMBO1,394,24,75,62,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "汇总",IDC_STATIC,348,15,129,128
+    LTEXT           "汇总选择：",IDC_STATIC,355,26,37,13
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,353,50,56,14
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,421,50,53,15
+    LTEXT           "到：",IDC_STATIC2,411,50,8,8
+    GROUPBOX        "汇总条件",IDC_STATIC1,352,70,117,49
+    GROUPBOX        "汇总情况",IDC_STATIC,349,149,129,143
+    EDITTEXT        IDC_EDIT3,363,88,96,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "汇总",IDC_BUTTON6,355,120,50,14
+    PUSHBUTTON      "退出",IDC_BUTTON7,417,120,50,14
+    LTEXT           "",IDC_STATIC4,355,228,117,36,WS_BORDER
+    LTEXT           "",IDC_STATIC3,355,162,117,36,WS_BORDER
+END
+
+IDF_INSTOCKQUERY DIALOG DISCARDABLE  0, 0, 472, 227
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "查询",IDC_STATIC,9,10,456,40
+    LTEXT           "查询条件：",IDC_STATIC,41,26,53,15
+    COMBOBOX        IDC_COMBO1,78,26,71,41,CBS_DROPDOWN | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,
+                    26,11,12
+    EDITTEXT        IDC_EDIT2,154,23,71,17,ES_AUTOHSCROLL
+    LTEXT           "时间：",IDC_STATIC,243,26,25,15
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,267,25,69,16
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,
+                    26,12,12
+    LTEXT           "到：",IDC_STATIC,341,25,21,16
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,354,24,69,16
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,9,63,456,155
+    PUSHBUTTON      "查询",IDC_BUTTON1,431,24,29,14
+END
+
+IDF_INDETAIL DIALOG DISCARDABLE  0, 0, 431, 296
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "查询",IDC_STATIC,7,12,416,35
+    LTEXT           "查询条件：",IDC_STATIC,30,26,38,12
+    COMBOBOX        IDC_COMBO1,69,25,54,41,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,
+                    24,13,15
+    EDITTEXT        IDC_EDIT2,128,26,42,12,ES_AUTOHSCROLL
+    LTEXT           "时间：",IDC_STATIC,193,28,29,9
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,226,25,65,16
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,175,
+                    25,14,15
+    LTEXT           "到：",IDC_STATIC,297,28,20,13
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,317,24,52,15
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,54,416,94
+    PUSHBUTTON      "查询",IDC_BUTTON1,374,26,45,14
+    LISTBOX         IDC_LIST2,14,179,409,97,NOT LBS_NOTIFY | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "商品详细信息",IDC_STATIC,7,163,417,126
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,148,416,10
+END
+
+IDF_OUTDETAIL DIALOG DISCARDABLE  0, 0, 482, 351
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "查询",IDC_STATIC,7,12,469,35
+    LTEXT           "查询条件：",IDC_STATIC,30,26,38,12
+    COMBOBOX        IDC_COMBO1,69,25,70,41,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,
+                    24,13,15
+    EDITTEXT        IDC_EDIT2,143,26,67,12,ES_AUTOHSCROLL
+    LTEXT           "时间：",IDC_STATIC,245,28,29,9
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,278,25,65,16
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,227,
+                    25,14,15
+    LTEXT           "到：",IDC_STATIC,349,28,20,13
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,369,24,52,15
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,54,469,139
+    PUSHBUTTON      "查询",IDC_BUTTON1,426,26,45,14
+    LISTBOX         IDC_LIST2,14,227,449,97,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWVARIABLE | LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "商品详细信息",IDC_STATIC,7,210,469,127
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,196,469,10
+END
+
+IDF_OUT_STOCKMANGE DIALOG DISCARDABLE  0, 0, 558, 404
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "库存情况 ",IDC_STATIC,15,13,388,220
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,22,26,372,195
+    GROUPBOX        "操作结果",IDC_STATIC,16,241,388,106
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,22,251,372,92
+    COMBOBOX        IDC_COMBO1,463,36,75,62,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "汇总",IDC_STATIC,415,14,129,160
+    LTEXT           "汇总选择：",IDC_STATIC,424,38,37,13
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,422,62,56,14
+    LTEXT           "到：",IDC_STATIC2,480,62,8,8
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,490,62,53,15
+    GROUPBOX        "汇总条件",IDC_STATIC1,421,81,117,49
+    EDITTEXT        IDC_EDIT3,432,100,96,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "汇总",IDC_BUTTON6,424,145,50,14
+    PUSHBUTTON      "退出",IDC_BUTTON7,486,145,50,14
+    GROUPBOX        "汇总情况",IDC_STATIC,416,198,129,148
+    LTEXT           "",IDC_STATIC4,422,294,117,36
+    LTEXT           "",IDC_STATIC3,422,229,117,36
+END
+
+IDF_GATHER_OUT DIALOGEX 0, 0, 497, 391
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT5,58,305,55,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,59,328,55,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT7,157,304,55,17,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT8,157,327,55,17,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT9,303,300,39,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,303,324,39,17,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBOINTYPE,264,39,61,58,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,264,57,61,14,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,347,38,99,36,ES_MULTILINE | ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBOPROVID,51,57,66,54,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_TABSTOP
+    LTEXT           "商品编号",IDC_STATIC1,14,307,37,11,WS_TABSTOP
+    LTEXT           "商品名称",IDC_STATIC2,14,329,37,11,WS_TABSTOP
+    LTEXT           "规格型号",IDC_STATIC3,116,306,38,11,WS_TABSTOP
+    LTEXT           "供应商",IDC_STATIC4,116,329,39,11,WS_TABSTOP
+    LTEXT           "数量：",IDC_STATIC5,271,330,29,13,WS_TABSTOP
+    LTEXT           "出价：",IDC_STATIC6,271,302,29,13,WS_TABSTOP
+    LTEXT           "",IDC_STATIC7,345,302,108,39,WS_TABSTOP
+    GROUPBOX        "新增窗口",IDC_STATIC8,7,292,451,60,WS_TABSTOP
+    CONTROL         "",IDC_STATIC9,"Static",SS_BLACKFRAME | WS_TABSTOP,7,279,
+                    448,10
+    PUSHBUTTON      "保存(&S)",IDC_TN_SAVE,7,11,41,14
+    PUSHBUTTON      "新增",IDC_BTN_ADDNEW,70,11,41,14
+    PUSHBUTTON      "删除",IDC_BTN_DEL,133,11,41,14
+    PUSHBUTTON      "出库确认",IDC_BTN_OK,196,11,41,14
+    PUSHBUTTON      "退出",IDC_BTN_CANCEL,259,11,41,14
+    GROUPBOX        "",IDC_STATIC,7,31,443,45
+    LTEXT           "出库单号:",IDC_STATIC,13,38,37,14
+    EDITTEXT        IDC_EDIT_INNUMBER,51,38,67,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "出库时间:",IDC_STATIC,123,40,35,10
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,161,39,53,13
+    LTEXT           "出库类型：",IDC_STATIC,221,42,37,8
+    LTEXT           "供应商：",IDC_STATIC,13,59,34,11
+    EDITTEXT        IDC_EDITPROVNAME,123,57,91,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "经办人：",IDC_STATIC,221,59,38,13
+    LTEXT           "备注",IDC_STATIC,326,41,16,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,79,443,21
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,108,451,163
+    GROUPBOX        "单位",IDC_STATIC10,214,300,55,44
+    EDITTEXT        IDC_EDIT11,217,320,46,13,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDF_GATHER_IN DIALOGEX 0, 0, 442, 270
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT5,55,220,58,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,55,243,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,157,219,55,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,157,242,55,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,303,215,39,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,303,239,39,17,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBOINTYPE,264,31,61,58,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,264,49,61,14,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,347,30,64,36,ES_MULTILINE | ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBOPROVID,51,49,66,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "商品编号：",IDC_STATIC1,14,222,41,11,WS_TABSTOP
+    LTEXT           "商品名称：",IDC_STATIC2,14,244,41,11,WS_TABSTOP
+    LTEXT           "规格型号：",IDC_STATIC3,116,221,39,11,WS_TABSTOP
+    LTEXT           "供应商：",IDC_STATIC4,116,244,39,11,WS_TABSTOP
+    LTEXT           "数量：",IDC_STATIC5,271,245,29,13,WS_TABSTOP
+    LTEXT           "进价：",IDC_STATIC6,271,217,29,13,WS_TABSTOP
+    LTEXT           "",IDC_STATIC7,351,211,84,54,WS_TABSTOP
+    GROUPBOX        "新增窗口",IDC_STATIC8,7,204,428,61,WS_TABSTOP
+    CONTROL         "",IDC_STATIC9,"Static",SS_BLACKFRAME | WS_TABSTOP,7,194,
+                    428,10
+    PUSHBUTTON      "保存(&S)",IDC_TN_SAVE,8,6,50,14
+    PUSHBUTTON      "新增",IDC_BTN_ADDNEW,72,6,50,14
+    PUSHBUTTON      "删除",IDC_BTN_DEL,134,6,50,14
+    PUSHBUTTON      "入库确认",IDC_BTN_OK,194,6,50,14
+    PUSHBUTTON      "退出",IDC_BTN_CANCEL,260,6,50,14
+    GROUPBOX        "",IDC_STATIC,7,23,428,45
+    LTEXT           "入库单号:",IDC_STATIC,13,30,37,14
+    EDITTEXT        IDC_EDIT_INNUMBER,51,30,67,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "入库时间:",IDC_STATIC,123,32,35,10
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,161,31,53,13
+    LTEXT           "入库类型：",IDC_STATIC,221,34,37,8
+    LTEXT           "供应商：",IDC_STATIC,13,51,34,11
+    EDITTEXT        IDC_EDITPROVNAME,123,49,91,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "经办人：",IDC_STATIC,221,51,38,13
+    LTEXT           "备注",IDC_STATIC,326,33,16,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,71,428,21
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,100,428,83
+    GROUPBOX        "单位",IDC_STATIC10,214,215,55,44
+    COMBOBOX        IDC_COMBO3,218,225,49,48,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDF_OUTSTOCKQUERY DIALOG DISCARDABLE  0, 0, 526, 350
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "查询",IDC_STATIC,0,12,513,47
+    LTEXT           "查询条件：",IDC_STATIC,37,31,41,17
+    COMBOBOX        IDC_COMBO1,77,30,60,41,CBS_DROPDOWN | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,
+                    29,13,15
+    EDITTEXT        IDC_EDIT2,141,30,68,12,ES_AUTOHSCROLL
+    LTEXT           "时间：",IDC_STATIC,239,31,29,13
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,269,29,56,13
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,222,
+                    28,14,15
+    LTEXT           "到：",IDC_STATIC,331,31,21,11
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,357,29,56,13
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,74,516,264
+    PUSHBUTTON      "查询",IDC_BUTTON1,417,28,46,13
+END
+
+IDD_BACKUPDIALOG DIALOG DISCARDABLE  0, 0, 193, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " 数据备份窗口"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "备份信息",IDC_STATIC,14,11,154,45
+    LTEXT           "数据库备份文件",IDC_STATIC,40,23,61,10
+    EDITTEXT        IDC_EDIT1,40,36,84,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON1,128,36,10,10
+    PUSHBUTTON      "数据备份",IDC_BUTTON3,14,61,42,12
+    PUSHBUTTON      "关闭窗口",IDC_BUTTON4,131,60,36,13
+END
+
+IDD_RESTOREDIALOG DIALOG DISCARDABLE  0, 0, 194, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据还原"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "备份信息",IDC_STATIC,14,14,161,41
+    LTEXT           "数据库备份文件",IDC_STATIC,40,27,61,10
+    EDITTEXT        IDC_EDIT1,40,39,84,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON1,128,40,10,10
+    PUSHBUTTON      "数据还原",IDC_BUTTON3,13,127,42,12
+    PUSHBUTTON      "关闭窗口",IDC_BUTTON4,143,126,36,13
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,13,58,163,65
+END
+
+IDD_PROVDIALOG DIALOG DISCARDABLE  0, 0, 214, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "添加",IDOK,17,138,50,14
+    PUSHBUTTON      "取消",IDCANCEL,125,138,50,14
+    LTEXT           "",IDC_STATIC1,48,16,47,24
+    LTEXT           "",IDC_STATIC2,48,47,47,22
+    LTEXT           "",IDC_STATIC3,48,76,47,22
+    LTEXT           "",IDC_STATIC4,48,101,47,24
+    LTEXT           "",IDC_STATIC20,94,16,57,11
+    LTEXT           "",IDC_STATIC21,94,47,57,11
+    LTEXT           "",IDC_STATIC22,94,76,57,11
+    LTEXT           "",IDC_STATIC23,94,101,57,11
+    EDITTEXT        IDC_EDIT1,94,27,57,13,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT2,94,56,57,13,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT3,94,85,57,13,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT4,94,112,57,13,ES_AUTOHSCROLL | NOT WS_BORDER
+END
+
+IDD_XStabdlg6 DIALOG DISCARDABLE  0, 0, 483, 502
+STYLE WS_CHILD
+FONT 9, "新宋体"
+BEGIN
+    CONTROL         "List1",ID_CSlist,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,22,25,334,146
+    COMBOBOX        1073,384,17,35,82,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        1074,430,17,27,82,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "年",IDC_STATIC,420,19,8,8
+    LTEXT           "月",IDC_STATIC,458,20,14,9
+    PUSHBUTTON      "按月结算",IDC_jiesuan,401,48,48,21
+    CONTROL         "List1",ID_CSlist2,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,22,205,367,147
+    GROUPBOX        "当前月份销售单汇总",IDC_STATIC,11,11,356,170
+    GROUPBOX        "当前月份销售结算",IDC_STATIC,11,190,458,175
+    CONTROL         "List1",ID_CSlist3,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,22,390,367,91
+    GROUPBOX        "当前月份销售退货结算",IDC_STATIC,11,377,457,112
+    EDITTEXT        IDC_XSmoney,398,315,62,24,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "本月销售总额",IDC_STATIC,401,291,54,9
+    EDITTEXT        IDC_THmoney,398,447,62,24,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "本月退货总额",IDC_STATIC,401,423,54,9
+    EDITTEXT        IDC_JXSmoney,389,127,75,24,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "本月净销售总额",IDC_STATIC,395,107,60,9
+END
+
+IDD_XStabdlg4 DIALOG DISCARDABLE  0, 0, 484, 504
+STYLE WS_CHILD
+FONT 9, "新宋体"
+BEGIN
+    CONTROL         "List1",ID_CSlist,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,18,17,350,120
+    LTEXT           "退货单编号：",IDC_STATIC,349,343,50,8
+    EDITTEXT        ID_xsdID,403,342,60,12,ES_AUTOHSCROLL
+    LTEXT           "经办人编号：",IDC_STATIC,26,163,50,8
+    EDITTEXT        ID_jbrID,78,161,56,12,ES_AUTOHSCROLL
+    LTEXT           "日期：",IDC_STATIC,158,163,27,8
+    EDITTEXT        ID_riqi,190,161,68,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询商品",IDC_find,373,374,61,16
+    CONTROL         "List1",ID_CSlist2,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,18,340,323,133
+    PUSHBUTTON      "查询退货单",IDC_CHAXUNxsd,398,159,51,15
+    CONTROL         "List1",ID_CSlist3,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,17,183,446,122
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER4,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,303,159,
+                    72,13
+    PUSHBUTTON      "赋日期",IDC_SETTIME,273,158,30,16
+    GROUPBOX        "查询退货单",IDC_STATIC,8,147,465,168
+    GROUPBOX        "退货商品信息",IDC_STATIC,9,324,465,160
+    PUSHBUTTON      "显示所有退货商品",IDC_SHOWALL,371,434,74,20
+    GROUPBOX        "退货单汇总",IDC_STATIC,8,5,465,139
+    PUSHBUTTON      "刷新",IDC_SHUAXIN,400,48,48,17
+END
+
+IDD_STOCKMANAGEDIALOG DIALOG DISCARDABLE  0, 0, 431, 258
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "当前库存信息"
+FONT 10, "新宋体"
+BEGIN
+    GROUPBOX        "当前库存信息",IDC_STATIC,15,14,399,154
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,22,26,382,114
+    GROUPBOX        "查询条件",IDC_STATIC,15,178,398,72
+    EDITTEXT        IDC_EDIT_NAME,72,198,74,14,ES_AUTOHSCROLL
+    LTEXT           "最低",IDC_STATIC,234,202,17,8
+    EDITTEXT        IDC_EDIT_MIN,255,198,49,14,ES_AUTOHSCROLL
+    LTEXT           "最高",IDC_STATIC,234,224,17,8
+    EDITTEXT        IDC_EDIT_MAX,255,223,49,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查 询",IDC_BTN_QUERY,347,194,50,13
+    PUSHBUTTON      "关闭",IDC_BTN_CLOSE,347,225,50,13
+    GROUPBOX        "",IDC_STATIC1,228,190,94,54
+    PUSHBUTTON      "显示当前库存数小于库存下限的所有商品",
+                    IDC_BUTTON_SHOWSPECIAL,129,148,158,17
+    PUSHBUTTON      "设置",IDC_BTN_SET,347,209,50,13
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,
+                    198,8,10
+    CONTROL         "商品名称：",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,200,50,10
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 173, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录窗口"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,74,50,14
+    PUSHBUTTON      "取消",IDCANCEL,116,74,50,14
+    LTEXT           "操作员：",IDC_STATIC,32,19,33,10
+    LTEXT           "密码：",IDC_STATIC,33,41,33,12
+    EDITTEXT        IDC_EDIT1,73,18,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,72,38,44,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_SALESQUERY DIALOG DISCARDABLE  0, 0, 362, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "销售查询"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,14,13,274,68
+    PUSHBUTTON      "查询销售单",IDC_CHAXUNxsd,241,188,42,12
+    GROUPBOX        "查询销售单",-1,6,93,349,109
+    GROUPBOX        "销售单汇总",-1,6,3,328,84
+    PUSHBUTTON      "刷新",IDC_INVALIDATE,302,60,32,12
+    CONTROL         "List1",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,16,104,216,85
+    COMBOBOX        IDC_COMBO1,278,111,66,62,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "查询选择：",-1,238,113,41,11
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,240,146,48,12
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,299,146,48,12
+    LTEXT           "到：",IDC_STATIC2,290,147,8,8
+    GROUPBOX        "查询条件",IDC_STATIC1,241,161,104,27
+    EDITTEXT        IDC_EDIT3,251,171,84,12,ES_AUTOHSCROLL
+    GROUPBOX        "",-1,237,101,111,100
+    CONTROL         "高级查询",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,245,129,45,9
+END
+
+IDD_SALESQUIT DIALOG DISCARDABLE  0, 0, 377, 256
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "退货单"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",ID_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,23,19,293,52
+    LTEXT           "销售单编号：",-1,279,76,40,8
+    EDITTEXT        ID_BUYID,322,74,45,12,ES_AUTOHSCROLL
+    LTEXT           "经办人编号：",-1,25,77,48,8
+    EDITTEXT        ID_OPERID,81,74,49,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "备注：",-1,163,75,31,8
+    EDITTEXT        ID_INFO,195,74,60,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "List1",ID_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,25,98,291,45
+    PUSHBUTTON      "刷新清空",IDC_INVALIDATE,321,114,49,13,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    LTEXT           "商品条形码：",-1,34,164,46,8
+    EDITTEXT        ID_MERCID,91,162,51,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "退货数量：",-1,160,162,35,8
+    EDITTEXT        ID_QUITNUM,195,160,46,12,ES_AUTOHSCROLL
+    LTEXT           "应退金额：",-1,78,236,41,13
+    EDITTEXT        ID_BACKMONEY,129,234,43,13,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "退货/退货单入库",ID_OK,189,233,61,13
+    CONTROL         "List1",ID_LIST3,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,25,180,283,44
+    PUSHBUTTON      "商品入单",ID_TSPRD,321,134,49,13
+    PUSHBUTTON      "商品出单",ID_TSPCD,321,159,49,13
+    GROUPBOX        "按销售单条形码退货",-1,20,150,297,78
+    GROUPBOX        "每张销售单所购物品",-1,19,88,300,57
+    PUSHBUTTON      "按编号查询",IDC_find,321,95,49,13
+    GROUPBOX        "销售单汇总",-1,19,7,300,66
+END
+
+IDD_SYSDLG DIALOG DISCARDABLE  0, 0, 287, 241
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统管理"
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "修改密码",IDC_MODIPASS,143,220,45,14
+    PUSHBUTTON      "取消",IDCANCEL,231,220,45,14
+    LTEXT           "用户ID",IDC_STATIC,16,32,36,10
+    LTEXT           "用户权限",IDC_STATIC,16,64,35,10
+    LTEXT           "用户密码",IDC_STATIC,136,64,36,10
+    LTEXT           "密码确认",IDC_STATIC,207,64,33,10
+    EDITTEXT        IDC_EDITNAME,56,32,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPASS,172,63,28,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPASSR,240,62,33,12,ES_PASSWORD | ES_AUTOHSCROLL
+    GROUPBOX        "新用户信息录入",IDC_STATIC,10,11,266,78
+    COMBOBOX        IDC_COMBO1,56,64,70,41,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加用户",IDC_ADDUSER,15,97,42,14
+    PUSHBUTTON      "注销用户",IDC_DELUSER,65,97,42,14
+    LTEXT           "旧密码",IDC_STATIC,147,119,32,10
+    LTEXT           "密码确认",IDC_STATIC,147,184,34,10
+    LTEXT           "新密码",IDC_STATIC,147,147,36,10
+    EDITTEXT        IDC_EDITOLDPASS,194,119,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITNEWPASS,194,147,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITNEWPASSR,194,184,70,12,ES_AUTOHSCROLL
+    GROUPBOX        "用户密码修改",IDC_STATIC,126,95,151,125
+    LISTBOX         IDC_LIST1,15,118,92,110,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "用户名称:",IDC_STATIC,137,32,44,9
+    EDITTEXT        IDC_EDIT1,181,30,91,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HCDB Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HCDB\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HCDB.EXE\0"
+            VALUE "ProductName", "HCDB 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MQQAPPEARANCE_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_FOREMANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDF_IN_STOCKMANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 478
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 292
+    END
+
+    IDF_INSTOCKQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 465
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDF_INDETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 289
+    END
+
+    IDF_OUTDETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 475
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 344
+    END
+
+    IDF_OUT_STOCKMANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 551
+        VERTGUIDE, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 397
+    END
+
+    IDF_GATHER_OUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 490
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 384
+    END
+
+    IDF_GATHER_IN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 435
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDF_OUTSTOCKQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 519
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_BACKUPDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_RESTOREDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_PROVDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_STOCKMANAGEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SALESQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_SALESQUIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_SYSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_NODRAGGING          CURSOR  DISCARDABLE     "res\\nodraggi.cur"
+IDC_HANDCUR             CURSOR  DISCARDABLE     "res\\handcur.cur"
+IDC_DRAGGING            CURSOR  DISCARDABLE     "res\\dragging.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDF_GATHER_IN DLGINIT
+BEGIN
+    IDC_COMBOINTYPE, 0x403, 9, 0
+0xd5c8, 0xa3b3, 0xc9b2, 0xbab9, "\000" 
+    IDC_COMBOINTYPE, 0x403, 9, 0
+0xd5c8, 0xa3b3, 0xd8bb, 0xd5ca, "\000" 
+    0
+END
+
+IDF_INSTOCKQUERY DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xebc8, 0xe2bf, 0xb1c6, 0xc5ba, "\000" 
+    0
+END
+
+IDF_INDETAIL DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xebc8, 0xe2bf, 0xb1c6, 0xc5ba, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xa9b9, 0xa6d3, 0xccc9, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xd9b2, 0xf7d7, 0xb1d4, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xccc9, 0xb7c6, 0xe0b1, 0xc5ba, "\000" 
+    0
+END
+
+IDF_IN_STOCKMANGE DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 7, 0
+0xeac4, 0xe3bb, 0xdcd7, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xc2d4, 0xe3bb, 0xdcd7, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xeccc, 0xe3bb, 0xdcd7, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0xebc8, 0xe2bf, 0xe0b1, 0xc5ba, 0xe3bb, 0xdcd7, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0xccc9, 0xb7c6, 0xe0b1, 0xc5ba, 0xe3bb, 0xdcd7, "\000" 
+    0
+END
+
+IDF_GATHER_OUT DLGINIT
+BEGIN
+    IDC_COMBOINTYPE, 0x403, 9, 0
+0xd5c8, 0xa3b3, 0xf6b3, 0xe2bf, "\000" 
+    IDC_COMBOINTYPE, 0x403, 9, 0
+0xcbcd, 0xf5bb, 0xb5b7, 0xa7b3, "\000" 
+    0
+END
+
+IDF_OUTSTOCKQUERY DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xf6b3, 0xe2bf, 0xb1c6, 0xc5ba, "\000" 
+    0
+END
+
+IDF_OUTDETAIL DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xebc8, 0xe2bf, 0xb1c6, 0xc5ba, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xa9b9, 0xa6d3, 0xccc9, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xd9b2, 0xf7d7, 0xb1d4, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xccc9, 0xb7c6, 0xe0b1, 0xc5ba, "\000" 
+    0
+END
+
+IDF_OUT_STOCKMANGE DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 7, 0
+0xeac4, 0xe3bb, 0xdcd7, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xc2d4, 0xe3bb, 0xdcd7, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xeccc, 0xe3bb, 0xdcd7, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0xf6b3, 0xe2bf, 0xe0b1, 0xc5ba, 0xe3bb, 0xdcd7, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0xccc9, 0xb7c6, 0xe0b1, 0xc5ba, 0xe3bb, 0xdcd7, "\000" 
+    0
+END
+
+IDD_SALESQUERY DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xb1ca, 0xe4bc, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xbbbd, 0xd7d2, 0xc5ba, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xccc9, 0xb7c6, 0xe0b1, 0xebc2, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xbbbd, 0xd7d2, 0xb4d7, 0xaccc, "\000" 
+    0
+END
+
+IDD_SYSDLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "HCDB\n开发\nHCDB\\我的\\作业\nHCDB.Document\nHCDB Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "HCDB"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+    IDC_STRING1             "供应商\r\n编号:"
+    IDC_STRING2             "供应商\r\n名称:"
+    IDC_STRING3             "供应商\r\n电话:"
+    IDC_STRING4             "供应商\r\n地址:"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDF_MBP DIALOG DISCARDABLE  0, 0, 430, 355
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         137,IDC_STATIC,"Static",SS_BITMAP,0,0,533,436
+END
+
+IDD_FORMVIEW1 DIALOG DISCARDABLE  0, 0, 655, 439
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",TCS_BUTTONS | 
+                    TCS_FIXEDWIDTH | TCS_FOCUSNEVER,7,7,641,425
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDF_MBP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 423
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 348
+    END
+
+    IDD_FORMVIEW1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 648
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 432
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\HCDB.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

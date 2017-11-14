@@ -1,0 +1,853 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GraduDeMIS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GraduDeMIS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 GraduDeMIS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "GraduDeMIS 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_GRADUDEMIS_DIALOG DIALOGEX 0, 0, 500, 354
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "毕业设计管理系统"
+MENU IDR_MENU
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         145,IDC_STATIC,"Static",SS_BITMAP,0,0,500,356
+END
+
+IDD_STU_DIALOG DIALOG DISCARDABLE  0, 0, 299, 282
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "学生信息"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,0,0,299,282
+END
+
+IDD_STU_DIALOG1 DIALOG DISCARDABLE  0, 0, 256, 233
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "查询",IDC_STUTAB1_BUTTON,204,27,27,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,13,59,232,166
+    LTEXT           "查询方式",IDC_STATIC,21,25,30,17,SS_CENTERIMAGE
+    COMBOBOX        IDC_STUTAB1_COMBO2,124,28,65,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO1,54,28,57,43,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,17,16,220,33
+END
+
+IDD_STU_DIALOG2 DIALOG DISCARDABLE  0, 0, 257, 229
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_ID,64,38,37,16,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_NAME,148,37,37,16,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    COMBOBOX        IDC_Sex_COMBO,65,72,40,37,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Class_COMBO,65,106,40,33,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,33,165,27,15,BS_FLAT
+    PUSHBUTTON      "修改",IDC_BUTTON_EDIT,69,165,27,15,BS_FLAT
+    PUSHBUTTON      "删除",IDC_BUTTON_DEL,105,165,27,15,BS_FLAT
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,139,165,31,15,BS_FLAT
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCLE,177,165,31,15,BS_FLAT
+    RTEXT           "学号",IDC_STATIC,33,38,26,16,SS_CENTERIMAGE
+    RTEXT           "姓名",IDC_STATIC,117,37,26,16,SS_CENTERIMAGE
+    RTEXT           "性别",IDC_STATIC,33,71,26,16,SS_CENTERIMAGE
+    RTEXT           "年龄",IDC_STATIC,117,70,26,16,SS_CENTERIMAGE
+    RTEXT           "班级",IDC_STATIC,34,104,26,16,SS_CENTERIMAGE
+    RTEXT           "专业",IDC_STATIC,118,103,26,16,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,22,22,212,119,BS_BITMAP | BS_FLAT
+    COMBOBOX        IDC_Age_COMBO,148,72,40,37,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Depart_COMBO,146,105,65,48,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TEACHER_DIALOG1 DIALOG DISCARDABLE  0, 0, 228, 232
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "List2",IDC_TEACHER_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,0,54,228,178
+    EDITTEXT        IDC_TEACHER_EDIT,99,25,58,13,ES_AUTOHSCROLL
+    RTEXT           "查询条件",IDC_STATIC,2,26,32,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_TEACHER_COMBO,38,25,57,41,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查 询",IDC_TEACHER_BTN,162,25,28,14,BS_FLAT
+    PUSHBUTTON      "打 印",IDC_PRINTTEST,195,25,28,14,BS_FLAT
+END
+
+IDD_TEACHER_DIALOG2 DIALOG DISCARDABLE  0, 0, 230, 235
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_TECR_NAME,58,47,45,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_TECR_SEX,148,47,45,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_TECR_AGE,58,84,45,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_TECR_TRROOM,58,123,45,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_TECR_LEVEL,148,85,45,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER
+    LTEXT           "姓名",IDC_STATIC,25,46,19,16,SS_CENTERIMAGE
+    LTEXT           "性别",IDC_STATIC,118,46,19,16,SS_CENTERIMAGE
+    LTEXT           "年龄",IDC_STATIC,25,84,21,16,SS_CENTERIMAGE
+    LTEXT           "教研室",IDC_STATIC,25,123,25,16,SS_CENTERIMAGE
+    LTEXT           "职称",IDC_STATIC,118,85,20,16,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,15,18,199,140,BS_FLAT
+    PUSHBUTTON      "添加",IDC_TECR_ADD,19,187,35,16,BS_FLAT
+    PUSHBUTTON      "修改",IDC_TECR_EDIT,58,187,35,16,BS_FLAT
+    PUSHBUTTON      "删除",IDC_TECR_DEL,96,187,35,16,BS_FLAT
+    PUSHBUTTON      "保存",IDC_TECR_SAVE,135,187,35,16,BS_FLAT
+    PUSHBUTTON      "取消",IDC_TECR_CANCEL,174,187,35,16,BS_FLAT
+    EDITTEXT        IDC_TECR_Ascio,149,123,45,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER
+    LTEXT           "联系方式",IDC_STATIC,116,123,31,16,SS_CENTERIMAGE
+END
+
+IDD_TEACHER_DIALOG DIALOG DISCARDABLE  0, 0, 271, 274
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "教师信息"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_TEACHER_TAB,"SysTabControl32",0x0,0,0,271,274
+END
+
+IDD_SubDLG DIALOG DISCARDABLE  0, 0, 275, 174
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选题情况汇总"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_ChoiSub_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,0,15,275,159
+    LTEXT           "选题情况列表",IDC_STATIC,2,4,53,10
+END
+
+IDD_SubInfoDLG DIALOG DISCARDABLE  0, 0, 299, 246
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选题对话框"
+FONT 10, "宋体"
+BEGIN
+    COMBOBOX        IDC_SubQuery_COMBO,185,4,46,77,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_QuerySubEDIT,232,4,38,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_QUERY_BTN,272,4,21,12
+    CONTROL         "List1",IDC_SubQuery_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,0,20,299,227
+    LTEXT           "双击记录选题",IDC_STATIC,2,7,53,9
+    CTEXT           "查询课题方式",IDC_STATIC,137,5,48,11,SS_CENTERIMAGE
+END
+
+IDD_Tecr_DclrSubDlg DIALOG DISCARDABLE  0, 0, 177, 212
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "教师申报课题对话框"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_SubTitle_EDIT,40,7,127,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SubKind_COMBO,40,26,55,47,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SubProEDIT,6,57,163,38,ES_MULTILINE | WS_VSCROLL
+    EDITTEXT        IDC_SubDemand_EDIT,6,111,163,38,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_TecrAsoci_EDIT,28,168,47,13,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_TecrAsoci_EDIT2,101,169,63,13,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,7,196,43,11
+    PUSHBUTTON      "退出",IDCANCEL,126,196,40,11
+    LTEXT           "课题题目",IDC_STATIC,7,7,33,14,SS_CENTERIMAGE
+    LTEXT           "课题类型",IDC_STATIC,7,25,32,14,SS_CENTERIMAGE
+    LTEXT           "课题简述",IDC_STATIC,7,44,33,13,SS_CENTERIMAGE
+    LTEXT           "课题要求",IDC_STATIC,7,99,33,12,SS_CENTERIMAGE
+    LTEXT           "手机：",IDC_STATIC,9,169,18,11,SS_CENTERIMAGE
+    LTEXT           "email：",IDC_STATIC,78,170,23,11,SS_CENTERIMAGE
+    GROUPBOX        "联系方式",IDC_STATIC,6,155,166,36
+END
+
+IDD_SysLog_DLG DIALOG DISCARDABLE  0, 0, 187, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统登录"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_UserType_COMBO,105,22,52,43,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_UserUnit_COMBO,105,36,52,50,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_User_COMBO,105,50,52,58,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PASSWORD,105,64,52,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_LoginBtn,42,87,26,13
+    PUSHBUTTON      "退出",IDC_ExitBtn,105,87,26,13
+    GROUPBOX        "",IDC_STATIC,5,4,177,102
+    LTEXT           "用户名",IDC_STATIC,30,51,27,8,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    LTEXT           "密    码",IDC_STATIC,30,65,25,8,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    RTEXT           "用户类型",IDC_STATIC,29,24,32,8,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    RTEXT           "所在单位",IDC_STATIC,29,37,32,8,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+END
+
+IDD_UserGL DIALOG DISCARDABLE  0, 0, 205, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "新增",IDC_ADD,70,24,28,14
+    DEFPUSHBUTTON   "修改",IDC_EDIT,70,46,28,14
+    DEFPUSHBUTTON   "删除",IDC_DEL,70,68,28,14
+    LISTBOX         IDC_User_LIST,10,16,46,115,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "保存",IDC_Save_BTN,118,116,26,11
+    DEFPUSHBUTTON   "取消",IDC_Cancel_BTN,163,116,26,11
+    DEFPUSHBUTTON   "退出",IDC_Exit_BTN,70,115,28,14
+    GROUPBOX        "用户资料",IDC_STATIC,108,7,90,129
+    LTEXT           "密码",IDC_STATIC,116,47,19,11
+    LTEXT           "确认",IDC_STATIC,116,72,20,11
+    EDITTEXT        IDC_Passwd,145,46,41,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RePass,145,68,41,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "用户名",IDC_STATIC,116,22,26,11
+    EDITTEXT        IDC_USER1,145,22,41,13,ES_AUTOHSCROLL
+    GROUPBOX        "用户列表",IDC_STATIC,6,7,55,129
+    CONTROL         "是否是管理员",IDC_IsAdmin_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,123,96,60,9
+END
+
+IDD_AnswZigeChek_DLG DIALOG DISCARDABLE  0, 0, 186, 140
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "答辩资格审核"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_Class_COMBO,28,13,52,43,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_StuName_COMBO,123,13,52,50,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CompuLevel,42,44,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_EngLevel,42,60,49,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_ColiResult,7,90,83,45,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_YDaoDays,149,44,22,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_HoliDays,149,62,19,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_AttDays,149,81,17,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_Result,101,113,79,23,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "计算机类:",IDC_STATIC,7,42,34,11,SS_CENTERIMAGE
+    GROUPBOX        "主要成绩",IDC_STATIC,4,30,88,107
+    LTEXT           "外语类:",IDC_STATIC,7,59,27,11,SS_CENTERIMAGE
+    RTEXT           "姓名",IDC_STATIC,105,15,17,8,SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "答辩资格审核结果：",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,102,103,74,10
+    GROUPBOX        "出勤情况",IDC_STATIC,100,30,79,71
+    LTEXT           "出勤天数:",IDC_STATIC,110,81,34,10
+    LTEXT           "请假天数:",IDC_STATIC,110,62,35,10
+    LTEXT           "应到天数:",IDC_STATIC,110,44,34,10
+    RTEXT           "班级",IDC_STATIC,9,15,18,8,SS_NOTIFY | SS_CENTERIMAGE
+    LTEXT           "综合测评:",IDC_STATIC,7,75,36,11,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,4,5,175,24
+END
+
+IDD_DocChek_DLG DIALOG DISCARDABLE  0, 0, 288, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文档审核对话框"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_Class_COMBO,34,10,52,43,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_StuName_COMBO,138,10,52,50,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "是否提交开题报告",IDC_KT_bSubmit_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | WS_TABSTOP,5,
+                    45,92,11
+    COMBOBOX        IDC_COMBO_Kaiti,64,65,38,40,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "进度计划是否切实可行",IDC_KT_bPlan_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | WS_TABSTOP,5,
+                    89,92,11
+    CONTROL         "  是否具备毕业设计基础   条件",IDC_KT_bBaseCndi_CHECK,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | 
+                    BS_MULTILINE | WS_TABSTOP,1,108,96,22
+    EDITTEXT        IDC_EDIT_Kaiti,55,133,47,14,ES_AUTOHSCROLL
+    CONTROL         "是否提交实习报告",IDC_SX_bSubmit_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | WS_TABSTOP,111,
+                    45,81,11
+    COMBOBOX        IDC_COMBO_Shixi,161,65,37,44,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "实习内容是否与论文相关",IDC_SX_bRelate_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | BS_MULTILINE | 
+                    WS_TABSTOP,112,95,84,20
+    EDITTEXT        IDC_EDIT_Shixi,152,133,46,14,ES_AUTOHSCROLL
+    CONTROL         "是否提交论文翻译",IDC_FY_bSubmit_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | WS_TABSTOP,209,
+                    44,72,11
+    COMBOBOX        IDC_COMBO_Fanyi,243,64,39,37,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "字数是否达到要求",IDC_FY_bNum_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | WS_TABSTOP,209,
+                    89,72,11
+    CONTROL         "是否与论文相关",IDC_FY_bRelate_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | BS_MULTILINE | 
+                    WS_TABSTOP,210,112,71,12
+    EDITTEXT        IDC_EDIT_Fanyi,243,133,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "开题报告",IDC_STATIC,2,30,103,119
+    GROUPBOX        "实习报告",IDC_STATIC,109,30,92,118
+    GROUPBOX        "论文翻译",IDC_STATIC,205,30,80,118
+    CTEXT           "综合成绩",IDC_STATIC,19,133,34,13,SS_CENTERIMAGE
+    CTEXT           "对课题理解程度",IDC_STATIC,6,63,56,13,SS_CENTERIMAGE
+    RTEXT           "姓名",IDC_STATIC,116,12,17,8,SS_NOTIFY | SS_CENTERIMAGE
+    RTEXT           "班级",IDC_STATIC,11,12,18,8,SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "翻译质量",IDC_STATIC,210,63,32,13,SS_CENTERIMAGE
+    CTEXT           "实习期间表现",IDC_STATIC,111,63,49,13,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,3,0,197,27
+    PUSHBUTTON      "确  定",IDC_OkBTN,230,6,38,17,BS_FLAT
+    CTEXT           "综合成绩",IDC_STATIC,115,133,35,13,SS_CENTERIMAGE
+    CTEXT           "综合成绩",IDC_STATIC,206,133,35,13,SS_CENTERIMAGE
+END
+
+IDD_ChoiStatusShow_DLG DIALOGEX 0, 0, 165, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选题状态提示对话框"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STATIC_ChoiStatus,97,27,57,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    PUSHBUTTON      "查看选题信息",IDC_SeeChoisubInfo_BTN,97,49,57,16,
+                    BS_FLAT
+    PUSHBUTTON      "进入选题",IDC_EnterChoiSub_BTN,97,53,57,16,BS_FLAT
+    LTEXT           "选题状态：",IDC_STATIC,97,15,41,9
+    GROUPBOX        "",IDC_STATIC,4,0,159,79
+    CONTROL         161,IDC_STATIC,"Static",SS_BITMAP,5,5,83,73
+END
+
+IDD_DclrSubStatus_DLG DIALOG DISCARDABLE  0, 0, 182, 208
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "申报课题提示对话框"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "申报课题",IDC_DclrSub_BTN,143,30,35,12,BS_FLAT
+    CONTROL         "List4",IDC_Ownsub_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,4,30,135,82
+    LISTBOX         IDC_ChoisubStu_LIST,143,43,35,55,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "选   择",IDC_ChoiStu_BTN,143,99,35,13,BS_FLAT
+    LTEXT           "Static",IDC_DclrMaxNum_STATIC,68,5,13,14,SS_CENTERIMAGE
+    LTEXT           "已经申报课题数：",IDC_STATIC,90,8,60,11,SS_CENTERIMAGE
+    LTEXT           "允许申报课题数：",IDC_STATIC,6,7,60,11,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_DclrNum_STATIC,152,6,13,14,SS_CENTERIMAGE
+    GROUPBOX        "选择课题的学生及其基本信息",IDC_STATIC,4,118,175,86,
+                    BS_CENTER
+    GROUPBOX        "",IDC_STATIC,3,0,175,22
+    EDITTEXT        IDC_ForLanLevel_EDIT,43,129,36,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_ComLevel_EDIT,122,130,57,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_SchShip_EDIT,6,156,170,44,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "外语水平:",IDC_STATIC,7,130,36,10
+    LTEXT           "计算机水平:",IDC_STATIC,80,130,43,9
+    LTEXT           "奖学金获得情况:",IDC_STATIC,7,145,64,9
+END
+
+IDD_DabianFenzu_DLG DIALOG DISCARDABLE  0, 0, 210, 234
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "答辩分组对话框"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_Class_COMBO,125,17,45,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Name_COMBO,125,39,45,147,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DabianType_COMBO,48,19,45,44,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SubType_COMBO,48,37,45,45,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "学生",IDC_STATIC,98,6,76,52,BS_LEFT
+    LTEXT           "班级：",IDC_STATIC,103,19,19,12,SS_CENTERIMAGE
+    LTEXT           "姓名：",IDC_STATIC,103,39,19,12,SS_CENTERIMAGE
+    LTEXT           "课题类型:",IDC_STATIC,9,36,38,13,SS_CENTERIMAGE
+    LTEXT           "答辩类型:",IDC_STATIC,9,18,35,13,SS_CENTERIMAGE
+    LTEXT           "答辩时间:",IDC_STATIC,7,59,35,13,SS_CENTERIMAGE
+    LTEXT           "答辩地点:",IDC_STATIC,7,73,35,13,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_STATIC_Position,47,73,150,13,SS_CENTERIMAGE
+    GROUPBOX        "类型",IDC_STATIC,3,6,96,52,BS_LEFT
+    PUSHBUTTON      "分组",IDC_Ok_BTN,178,20,24,12,BS_FLAT
+    PUSHBUTTON      "查询",IDC_QUERY_BTN,178,39,24,12,BS_FLAT
+    GROUPBOX        "",IDC_STATIC,3,53,204,178
+    LTEXT           "Static",IDC_STATIC_Date,47,59,157,13,SS_CENTERIMAGE
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,152,195,74
+    GROUPBOX        "",IDC_STATIC,173,6,34,52
+    LTEXT           "答辩专家:",IDC_STATIC,7,87,35,13,SS_CENTERIMAGE
+    LTEXT           "答辩要求:",IDC_STATIC,7,102,35,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_Demand,7,113,194,35,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "Static",IDC_STATIC_Expers,47,87,157,14,SS_CENTERIMAGE
+END
+
+IDD_Subject_DLG DIALOG DISCARDABLE  0, 0, 270, 233
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "课题基础信息"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,0,0,270,233
+END
+
+IDD_SubTab1_DLG DIALOG DISCARDABLE  0, 0, 305, 259
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,35,305,223
+    LTEXT           "查询条件",IDC_STATIC,7,13,35,12
+    COMBOBOX        IDC_COMBO1,49,12,63,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,142,13,71,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON1,247,12,35,13
+END
+
+IDD_SubTab2_DLG DIALOG DISCARDABLE  0, 0, 304, 262
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+    LTEXT           "课题名称：",IDC_STATIC,11,15,45,17
+    LTEXT           "课题类型：",IDC_STATIC,11,44,45,17
+    LTEXT           "课题简述：",IDC_STATIC,11,73,45,17
+    LTEXT           "课题要求：",IDC_STATIC,11,154,45,17
+    LTEXT           "导师：",IDC_STATIC,144,15,45,17
+    PUSHBUTTON      "添加",IDC_BUTTON1,238,237,34,15
+    EDITTEXT        IDC_SUB_NAME,59,11,59,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SUB_PRO,57,72,230,70,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_SUB_DEMAND,57,154,230,70,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    COMBOBOX        IDC_SUB_TEA,191,12,60,16,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUB_TYPE,59,41,59,15,ES_AUTOHSCROLL
+END
+
+DLG_SYS_PREVIEW DIALOG DISCARDABLE  0, 0, 450, 300
+STYLE DS_CONTROL | WS_CHILD | WS_VSCROLL | WS_HSCROLL
+FONT 9, "宋体"
+BEGIN
+END
+
+DLG_SYS_PREPARENT DIALOG DISCARDABLE  0, 0, 450, 299
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "打印预览"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_SUP,"Static",SS_BLACKFRAME | SS_SUNKEN,0,0,449,1
+    CONTROL         "",IDC_SDOWN,"Static",SS_BLACKFRAME | SS_SUNKEN,0,17,449,
+                    1
+    LISTBOX         IDC_LIST1,0,5,8,9,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+DLG_SYS_PREGOTO DIALOG DISCARDABLE  0, 0, 139, 73
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "转到页"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "页码(&P):",IDC_STATIC,25,18,33,8
+    EDITTEXT        EDT_GOTO,63,15,39,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",SPIN_GOTO,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,103,15,
+                    10,14
+    PUSHBUTTON      "确定(&O)",BTN_OK,16,44,50,15
+    PUSHBUTTON      "取消(&C)",BTN_CANCEL,73,44,50,15
+END
+
+IDD_Kaoqin_DLG DIALOGEX 0, 0, 226, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "考勤管理"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "查询条件",IDC_STATIC,1,0,223,50
+    LTEXT           "时间范围",IDC_STATIC,6,14,32,12,SS_CENTERIMAGE
+    LTEXT           "学       生",IDC_STATIC,7,31,32,13,SS_CENTERIMAGE
+    LTEXT           "从",IDC_STATIC,51,15,9,11,SS_CENTERIMAGE
+    LTEXT           "至",IDC_STATIC,122,15,8,11,SS_CENTERIMAGE
+    LTEXT           "班级:",IDC_STATIC,48,32,19,11,SS_CENTERIMAGE
+    LTEXT           "姓名:",IDC_STATIC,118,32,20,11,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_From,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,67,14,50,
+                    12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_To,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,138,14,
+                    49,12
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,4,140,218,69
+    GROUPBOX        "出勤记录列表:",IDC_STATIC,0,127,226,84
+    PUSHBUTTON      "查询",IDC_QUERY_BTN,196,23,22,13,BS_FLAT
+    GROUPBOX        "添加记录",IDC_STATIC,1,56,224,68
+    LTEXT           "日       期:",IDC_STATIC,7,68,37,11,SS_CENTERIMAGE
+    PUSHBUTTON      "确定",IDC_Add_BTN,196,67,22,13,BS_FLAT
+    LTEXT           "班       级:",IDC_STATIC,7,105,32,10,SS_CENTERIMAGE
+    LTEXT           "姓       名:",IDC_STATIC,7,87,32,11,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_Date,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,44,69,50,
+                    12
+    CONTROL         "未出勤及原因",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,109,69,58,13,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_UnAttRea,108,87,111,30,ES_MULTILINE | 
+                    WS_VSCROLL
+    COMBOBOX        IDC_Class_COMBO,67,32,50,12,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_StuName_COMBO,138,32,50,12,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_StuName_COMBO2,44,87,50,12,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Class_COMBO2,44,105,50,12,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GraduDeMIS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GraduDeMIS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GraduDeMIS.EXE\0"
+            VALUE "ProductName", "GraduDeMIS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GRADUDEMIS_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 347
+    END
+
+    IDD_STU_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_STU_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_TEACHER_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_SubInfoDLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_Tecr_DclrSubDlg, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 209
+    END
+
+    DLG_SYS_PREVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 432
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    DLG_SYS_PREPARENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 443
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 292
+    END
+
+    DLG_SYS_PREGOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "系统管理(&X)"
+    BEGIN
+        MENUITEM "系统登录",                    IDD_SysLog_DLG
+        MENUITEM "系统使用帮助",                ID_MENUITEMUserHelp
+        MENUITEM "退出系统",                    ID_ExitSys
+    END
+    POPUP "基础信息管理(&B)"
+    BEGIN
+        MENUITEM "学生基础信息",                IDD_STU_DIALOG
+        MENUITEM "教师基础信息",                IDD_TEACHER_DIALOG
+        MENUITEM "课题基础信息",                IDD_Subject_DLG
+    END
+    POPUP "双向选题(&A)"
+    BEGIN
+        MENUITEM "学生选择课题",                IDD_ChoiStatusShow_DLG
+        MENUITEM "教师申报课题",                IDD_DclrSubStatus_DLG
+        MENUITEM "选题情况汇总",                IDD_Choisublist_DLG
+    END
+    POPUP "阶段控制(&C)"
+    BEGIN
+        MENUITEM "文档审核",                    ID_MENUITEM_DocChek
+        MENUITEM "考勤管理",                    IDD_Kaoqin_DLG
+    END
+    POPUP "答辩管理(&B)"
+    BEGIN
+        MENUITEM "答辩资格审核",                IDD_AnswZigeChek_DLG
+        MENUITEM "论文答辩分组",                IDD_DabianFenzu_DLG
+    END
+    POPUP "日常办公(&D)"
+    BEGIN
+        MENUITEM "用户管理",                    IDD_UserGL
+        POPUP "数据库管理"
+        BEGIN
+            MENUITEM "数据库备份",                  ID_MENUITEM_DBCopy
+            MENUITEM "数据库还原",                  ID_MENUITEM_DBRestore
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\girl1.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\zhujiemian.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\dog.bmp"
+BMP_BACK                BITMAP  DISCARDABLE     "image\\bmp_back.bmp"
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "image\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      TBTN_TOP
+    BUTTON      TBTN_PREVIOUS
+    SEPARATOR
+    BUTTON      TBTN_GOTO
+    SEPARATOR
+    BUTTON      TBTN_NEXT
+    BUTTON      TBTN_LAST
+    SEPARATOR
+    BUTTON      TBTN_EXIT
+    SEPARATOR
+    BUTTON      TBTN_PRINT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SubTab1_DLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xeab1, 0xe2cc, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe0c0, 0xcdd0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xbcb5, 0xa6ca, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 GraduDeMIS(&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ICON_PREVIEW            "           "
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\GraduDeMIS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
